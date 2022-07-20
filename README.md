@@ -1,2 +1,2 @@
 # Codingan-WEB-rebranding-ropeg.menlhk
-Ricardo Jo
+Ricardo Jo, Naufal Ra, Dimas
