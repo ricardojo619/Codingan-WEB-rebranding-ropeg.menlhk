@@ -2,12 +2,12 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-sm-6 col-lg-3 py-3">
-            <img src="{{ asset('img/logo.png') }}" style="width: 65%;height: 25%;" alt="">
+            <img src="{{ asset('img/logo.png') }}" style="width:100%;height: 25%;" alt="">
           <h5 class="mt-4">Social Media</h5>
           <ul class="footer-menu">
             <a href="#" target="_blank"><span class="mai-logo-instagram"></span> ropegklhk</a>
             <br>
-            <a href="#" target="_blank"><span class="mai-logo-youtube"></span>Kementrian LHK</a>
+            <a href="#" target="_blank"><span class="mai-logo-youtube"></span> Kementrian LHK</a>
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
