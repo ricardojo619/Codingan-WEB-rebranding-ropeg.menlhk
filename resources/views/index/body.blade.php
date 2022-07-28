@@ -109,6 +109,17 @@
 
   </div><!-- /.container -->
 
+  <div class="page-wrapper">
+    <div class="container">
+      <div class="text-center">
+        <h2>Serba Serbi</h2>
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn-danger mb-4 mt-2 justify-content-center">Struktur Organisasi</a>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 @include('index.assets.footer')

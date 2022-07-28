@@ -26,7 +26,7 @@
             <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
           </div>
         </div> --}}
-        <img src="{{ asset('img/carousel-item/1.jpg') }}" alt="">
+        <img src="{{ asset('img/carousel-item/kimetsu.jpg') }}" alt="">
       </div>
       <div class="carousel-item">
         {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
