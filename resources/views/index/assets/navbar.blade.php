@@ -3,7 +3,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="{{ asset('img/logo lhk.png') }}" alt="" style="width: 15%;height: 15%">
-          <img src="{{ asset('img/biro peg dan org.png') }}" alt="" style="width: 45%;height: 45%">
+          <img src="{{ asset('img/biro peg dan org.png') }}" alt="" style="width: 50%;height: 50%">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
