@@ -10,3 +10,9 @@
     font-family: 'Poppins' ;
 
 }
+
+.hr-bold{
+    border: 10px solid black;
+    color:black;
+    width: 15%;
+}
