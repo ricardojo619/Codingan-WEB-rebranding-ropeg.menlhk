@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('footer/assets/css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('footer/assets/css/maicons.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     <style>
       .bd-placeholder-img {
@@ -78,7 +79,10 @@
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
-
+    
+    <h1 class="text-center mb-4 text-underline" style="text-decoration: underline;">
+      Gallery
+  </h1>
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
@@ -108,6 +112,54 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col" style="background-color: rgba(2, 83, 107, 0.811);color: rgb(255, 255, 255);"><br>
+        <span class="text-coulumn" style="margin-top: 12px">INFO LAIN</span>
+        <hr class="mx-auto" width="60%">
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Pengadaan CPNS 2022</a></div><br>
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Pengadaan CPNS 2022</a></div><br>
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Pengadaan CPNS 2022</a></div><br>
+        <br>
+         <div class="text-center">
+            <a href="#" class="btn btn-light mb-4 mt-2 justify-content-center">LIHAT SEMUA</a>
+          </div>
+      </div>
+      <div class="col" style="background-color: rgba(226, 223, 223, 0.825);color:rgb(0, 0, 0));"><br>
+        <span class="text-coulumn" style="margin-top: 12px">EVENT</span>
+        <hr class="mx-auto" width="60%">
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Sosialisasi SIMPEG & SAPK 2022</a></div><br>
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Sosialisasi SIMPEG & SAPK 2022</a></div><br>
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Sosialisasi SIMPEG & SAPK 2022</a></div><br>
+        <br>
+         <div class="text-center">
+            <a href="#" class="btn btn-secondary mb-4 mt-2 justify-content-center">LIHAT SEMUA</a>
+          </div>
+      </div>
+      <div class="col" style="background-color: rgba(2, 83, 107, 0.811);color: rgb(255, 255, 255);"><br>
+        <span class="text-coulumn" style="margin-top: 12px">PENGUMUMAN</span>
+        <hr class="mx-auto" width="60%">
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Bimbingan Teknis Pengelola Adm</a></div><br>
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Bimbingan Teknis Pengelola Adm</a></div><br>
+        <div class="text-start font-poppin">Tgl Bln Thn</div>
+        <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i><a href="#">Bimbingan Teknis Pengelola Adm</a></div><br>
+        <br>
+         <div class="text-center">
+            <a href="#" class="btn btn-light mb-4 mt-2 justify-content-center">LIHAT SEMUA</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
 
   <div class="page-wrapper">
     <div class="container">

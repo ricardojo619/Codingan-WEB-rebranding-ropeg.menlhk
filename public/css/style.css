@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+
+.text-coulumn{
+ font-family:'Poppins' ;
+ font-weight: 700;
+ font-size: 20px;
+}
+
+.font-poppin{
+    font-family: 'Poppins' ;
+
+}
