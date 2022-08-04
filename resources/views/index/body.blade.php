@@ -80,7 +80,7 @@
 
     <hr class="featurette-divider">
     
-    <h1 class="text-center mb-4">
+    <h1 class="text-center mb-4" style="color: black;">
       Gallery
   </h1>
   <hr class="hr-bold mx-auto">
