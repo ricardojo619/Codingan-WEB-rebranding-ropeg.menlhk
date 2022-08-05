@@ -145,7 +145,7 @@
         <h2>Serba Serbi</h2>
       </div>
       <div class="text-center">
-        <a href="#" class="btn btn-danger mb-4 mt-2 justify-content-center">Struktur Organisasi</a>
+        <a href="#" class="btn btn-info mb-4 mt-2 justify-content-center">Struktur Organisasi</a>
       </div>
     </div>
   </div>
