@@ -5,14 +5,14 @@
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
+
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
+        <img src="{{ asset('img/carousel-item/g20.jpg') }}" alt="">
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Contoh Carousel</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#">Klik Disini</a></p>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@
             <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
           </div>
         </div> --}}
-        <img src="{{ asset('img/carousel-item/shikimori.jpg') }}" alt="">
+        <img src="{{ asset('img/carousel-item/Newnormal.jpg') }}" alt="">
       </div>
       <div class="carousel-item">
         {{-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
@@ -38,7 +38,7 @@
             <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
           </div>
         </div> --}}
-        <img src="{{ asset('img/carousel-item/2.png') }}" alt="">
+        <img src="{{ asset('img/carousel-item/g20.jpg') }}" alt="">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
