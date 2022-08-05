@@ -25,7 +25,7 @@
       <hr>
       <div class="text-center">
         <p id="copyright">Hak cipta &copy; 2022 Biro Kepegawaian dan Organisasi All Rights Reserved.</p>
-        <p id="copyright">Dikelola oleh Subbagian Data dan Informasi Kepegawaian, Biro Kepegawaian dan Organisasi</p>
+        <p id="copyright">Dikelola Subbagian Data dan Informasi Kepegawaian, Biro Kepegawaian dan Organisasi </p>
       </div>
 
     </div>
