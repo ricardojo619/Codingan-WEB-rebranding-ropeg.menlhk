@@ -48,6 +48,10 @@
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="px-2 bg-light "><marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="7" behavior="scroll">
+    || PEMUTAKHIRAN DATA MANDIRI (PDM) ASN MELALUI MySAPK MULAI JULI-OKTOBER 2021  ||  APABILA ASN DALAM LINGKUP KLHK MENGALAMI KESULITAN DALAM AKSES SIMPEG DAN MySAPK HARAP HUBUNGI ADMIN BIRO KEPEGAWAIAN DAN ORGANISASI ||
+    </marquee></div>
+
     <h1 class="text-center mb-4 text-underline" style="text-decoration: underline;">
         Info Terbaru
     </h1>
@@ -59,23 +63,23 @@
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2>Test</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu fringilla lacus. Morbi rhoncus magna non ipsum posuere lacinia. Etiam metus sapien, mollis vel venenatis eu, ornare sed dui.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <h2>Seleksi Terbuka Pengisian JPT di Lingkungan Sekretariat Jendral DPR RI</h2>
+        <p>Kosong.</p>
+        <p><a class="btn btn-secondary" href="#">Selengkapnya &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2>Test</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu fringilla lacus. Morbi rhoncus magna non ipsum posuere lacinia. Etiam metus sapien, mollis vel venenatis eu, ornare sed dui.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <h2>Pengumuman SKD CPNS 2022</h2>
+        <p>Kosong.</p>
+        <p><a class="btn btn-secondary" href="#">Selengkapnya &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu fringilla lacus. Morbi rhoncus magna non ipsum posuere lacinia. Etiam metus sapien, mollis vel venenatis eu, ornare sed dui.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <h2>Sosialisasi SIMPEG dan MySAPK 2022</h2>
+        <p>kosong.</p>
+        <p><a class="btn btn-secondary" href="#">Selengkapnya &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
