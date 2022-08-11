@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\BerandaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index.body');
+    return view('frontend.body');
 });
+
+Route::get('/', [BerandaController::class, 'beranda']);
+Route::get('/beranda', [BerandaController::class, 'beranda']);
+Route::get('/beranda/struktur', [BerandaController::class, 'struktur']);

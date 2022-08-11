@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="{{ asset('img/logo_ropeg_klhk.png') }}" alt="" style="width: 50%;height: 50%">
+          <img src="{{ asset('img/logoropegklhk.png') }}" alt="" style="width: 50%;height: 50%">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
