@@ -14,9 +14,10 @@ use App\Http\Controllers\BerandaController;
 */
 
 Route::get('/', function () {
-    return view('frontend.body');
+    return view('index.body');
 });
-
+=======
 Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/beranda', [BerandaController::class, 'beranda']);
 Route::get('/beranda/struktur', [BerandaController::class, 'struktur']);
+>>>>>>> 00b1a4c9dd2a195e25da2d0513c3d371c966fc0f
