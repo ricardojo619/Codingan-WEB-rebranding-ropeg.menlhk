@@ -14,26 +14,26 @@
               <a class="nav-link" aria-current="page" href="#">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Profil</a>
+              <a class="nav-link" href="{{ url("/Profil") }}">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Berita</a>
+              <a class="nav-link" href="{{ url("/Berita") }}">Berita</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Administrasi Kepegawaian
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Pengangkatan PNS</a></li>
-                  <li><a class="dropdown-item" href="#">Kartu Pegawai</a></li>
-                  <li><a class="dropdown-item" href="#">Kartu Istri/Suami</a></li> 
+                  <li><a class="dropdown-item" href="{{ url("/Pengpns") }}">Pengangkatan PNS</a></li>
+                  <li><a class="dropdown-item" href="{{ url("/Karpeg") }}">Kartu Pegawai</a></li>
+                  <li><a class="dropdown-item" href="{{ url("/Karissu") }}">Kartu Istri/Suami</a></li> 
                   {{--  --}}
                   <li class="dropdown-submenu">
                     <a href="#" class="dropdown-item" data-toggle="dropdown">Alih Tugas</a>
                     <ul class="dropdown-menu"> 
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Alih Tugas Lingkungan KLHK</a></li>
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Alih Tugas dari Kementerian LHK ke PEMDA/Instansi Lain</a></li>
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Alih Tugas dari PEMDA/Instansi Lain ke Lingkup Kementerian LHK</a></li>
+                        <li><a href="{{ url("/Altuglk") }}" class="dropdown-item" data-toggle="dropdown">Alih Tugas Lingkungan KLHK</a></li>
+                        <li><a href="{{ url("/Altugpemdal") }}" class="dropdown-item" data-toggle="dropdown">Alih Tugas dari Kementerian LHK ke PEMDA/Instansi Lain</a></li>
+                        <li><a href="{{ url("/Altugpemdalk") }}" class="dropdown-item" data-toggle="dropdown">Alih Tugas dari PEMDA/Instansi Lain ke Lingkup Kementerian LHK</a></li>
                     </ul>
                   </li> 
                   {{--  --}}
@@ -41,12 +41,12 @@
                   <li class="dropdown-submenu">
                     <a href="#" class="dropdown-item" data-toggle="dropdown">Pengembangan Pegawai</a>
                     <ul class="dropdown-menu"> 
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Ujian Dinas</a></li>
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Ujian GI/PI/PG</a></li>
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Izin Belajar/Tugas Belajar</a></li>
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Seleksi 4 Kriteria</a></li>
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Personal Assesment Centre (PAC)</a></li>
-                        <li><a href="#" class="dropdown-item" data-toggle="dropdown">Seleksi Jabatan Lowong Pimpinan Tinggi</a></li>
+                        <li><a href="{{ url("/Ujdin") }}" class="dropdown-item" data-toggle="dropdown">Ujian Dinas</a></li>
+                        <li><a href="{{ url("/Ujgi") }}" class="dropdown-item" data-toggle="dropdown">Ujian GI/PI/PG</a></li>
+                        <li><a href="{{ url("/Izbel") }}" class="dropdown-item" data-toggle="dropdown">Izin Belajar/Tugas Belajar</a></li>
+                        <li><a href="{{ url("/Sel4kri") }}" class="dropdown-item" data-toggle="dropdown">Seleksi 4 Kriteria</a></li>
+                        <li><a href="{{ url("/PAC") }}" class="dropdown-item" data-toggle="dropdown">Personal Assesment Centre (PAC)</a></li>
+                        <li><a href="{{ url("/Seljalo") }}" class="dropdown-item" data-toggle="dropdown">Seleksi Jabatan Lowong Pimpinan Tinggi</a></li>
                         <li class="dropdown-submenu">
                             <a href="#" class="dropdown-item" data-toggle="dropdown">Diklat Kepemimpinan</a>
                             <ul class="dropdown-menu">
@@ -66,10 +66,10 @@
                     <a href="#" class="dropdown-item" data-toggle="dropdown">LHKPN</a>
                     <ul class="dropdown-menu">
                         <li class="">
-                            <a href="#" class="dropdown-item" data-toggle="dropdown">Mengenai LHKPN</a>
-                            <a href="#" class="dropdown-item" data-toggle="dropdown">Prosedur Pelayanan LHKPN</a> 
-                            <a href="#" class="dropdown-item" data-toggle="dropdown">Bimbingan Teknis Pengisian</a>
-                            <a href="#" class="dropdown-item" data-toggle="dropdown">Formulir LHKPN</a>
+                            <a href="{{ url("/Menglhkpn") }}" class="dropdown-item" data-toggle="dropdown">Mengenai LHKPN</a>
+                            <a href="{{ url("/Prolhkpn") }}" class="dropdown-item" data-toggle="dropdown">Prosedur Pelayanan LHKPN</a> 
+                            <a href="{{ url("/Bimtek") }}" class="dropdown-item" data-toggle="dropdown">Bimbingan Teknis Pengisian</a>
+                            <a href="{{ url("/Forlhkpn") }}" class="dropdown-item" data-toggle="dropdown">Formulir LHKPN</a>
                         </li>
                     </ul>
                 </li>
@@ -77,10 +77,10 @@
                   <a href="#" class="dropdown-item" data-toggle="dropdown">Pensiun</a>
                   <ul class="dropdown-menu">
                       <li class="">
-                          <a href="#" class="dropdown-item" data-toggle="dropdown">Pensiun Otomatis (Mencapai Batas Usia Pensiun)</a>
-                          <a href="#" class="dropdown-item" data-toggle="dropdown">Pensiun Janda/Duda dari PNS yang Tewas</a> 
-                          <a href="#" class="dropdown-item" data-toggle="dropdown">Pensiun Janda/Duda dari PNS yang Meninggal Dunia</a>
-                          <a href="#" class="dropdown-item" data-toggle="dropdown">Pensiun Janda/Duda dari Pensiunan PNS YANG Meninggal Dunia</a>
+                          <a href="{{ url("/Penot") }}" class="dropdown-item" data-toggle="dropdown">Pensiun Otomatis (Mencapai Batas Usia Pensiun)</a>
+                          <a href="{{ url("/Penjadute") }}" class="dropdown-item" data-toggle="dropdown">Pensiun Janda/Duda dari PNS yang Tewas</a> 
+                          <a href="{{ url("/Penjadumen") }}" class="dropdown-item" data-toggle="dropdown">Pensiun Janda/Duda dari PNS yang Meninggal Dunia</a>
+                          <a href="{{ url("/Penjadupemen") }}" class="dropdown-item" data-toggle="dropdown">Pensiun Janda/Duda dari Pensiunan PNS YANG Meninggal Dunia</a>
                       </li>
                   </ul>
                  </li>
@@ -88,15 +88,15 @@
                   <a href="#" class="dropdown-item" data-toggle="dropdown">Satya Lencana</a>
                   <ul class="dropdown-menu">
                       <li class="">
-                          <a href="#" class="dropdown-item" data-toggle="dropdown">Bintang Jasa</a>
-                          <a href="#" class="dropdown-item" data-toggle="dropdown">Satyalancana Pembangunan</a> 
-                          <a href="#" class="dropdown-item" data-toggle="dropdown">Satyalancana Karya Satya</a>
-                          <a href="#" class="dropdown-item" data-toggle="dropdown">Satyalancana Wirakarya</a>
+                          <a href="{{ url("/Binjas") }}" class="dropdown-item" data-toggle="dropdown">Bintang Jasa</a>
+                          <a href="{{ url("/Satlenpem") }}" class="dropdown-item" data-toggle="dropdown">Satyalancana Pembangunan</a> 
+                          <a href="{{ url("/Satlenkarsa") }}" class="dropdown-item" data-toggle="dropdown">Satyalancana Karya Satya</a>
+                          <a href="{{ url("/Satlenwira") }}" class="dropdown-item" data-toggle="dropdown">Satyalancana Wirakarya</a>
                       </li>
                   </ul>
                  </li>
-                  <li><a class="dropdown-item" href="#">Pencantuman Gelar</a></li>
-                  <li><a class="dropdown-item" href="#">Ralat Nama/NIP</a></li>
+                  <li><a class="dropdown-item" href="{{ url("/Pengel") }}">Pencantuman Gelar</a></li>
+                  <li><a class="dropdown-item" href="{{ url("/Ralnamnip") }}">Ralat Nama/NIP</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -142,7 +142,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Regulasi</a>
+              <a class="nav-link" href="{{ url("/Regulasi") }}">Regulasi</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
