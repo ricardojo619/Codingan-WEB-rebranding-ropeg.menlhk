@@ -70,3 +70,7 @@ Route::get('/Regulasi', [BerandaController::class, 'regulasi']);
 Route::get('/BUP', [BerandaController::class, 'bup']);
 Route::get('/KPO', [BerandaController::class, 'kpo']);
 Route::get('/Struktural', [BerandaController::class, 'struktural']);
+Route::get('/Pengcpns', [BerandaController::class, 'pengcpns']);
+Route::get('/Simpegsapk', [BerandaController::class, 'simpegsapk']);
+Route::get('/Bimtekadm', [BerandaController::class, 'bimtekadm']);
+Route::get('/Btnlihse', [BerandaController::class, 'btnlihse']);
