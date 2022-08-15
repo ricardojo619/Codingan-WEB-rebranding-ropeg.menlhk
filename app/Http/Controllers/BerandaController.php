@@ -116,6 +116,10 @@ class BerandaController extends Controller
         return view('Navbar.Adkep.Pensiun.Penjadumen.penjadumen');
     }
 
+    public function penjadupemen(){
+        return view('Navbar.Adkep.Pensiun.Penjadupemen.penjadupemen');
+    }
+
     public function binjas(){
         return view('Navbar.Adkep.Satlen.Binjas.binjas');
     }
