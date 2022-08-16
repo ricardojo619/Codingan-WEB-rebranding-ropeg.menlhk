@@ -234,6 +234,19 @@ class BerandaController extends Controller
         return view('Bodyevent.Btnlihse.btnlihse');
     }
 
+    //End of Event(Info Lain)//
+
+    public function selterjpt(){
+        return view('Bodyinfoter.Selterjpt.selterjpt');
+    }
+
+    public function pengskdcpns(){
+        return view('Bodyinfoter.Pengskdcpns.pengskdcpns');
+    }
+
+    public function sosmysapk(){
+        return view('Bodyinfoter.Sosmysapk.sosmysapk');
+    }
     
 
 

@@ -74,3 +74,6 @@ Route::get('/Pengcpns', [BerandaController::class, 'pengcpns']);
 Route::get('/Simpegsapk', [BerandaController::class, 'simpegsapk']);
 Route::get('/Bimtekadm', [BerandaController::class, 'bimtekadm']);
 Route::get('/Btnlihse', [BerandaController::class, 'btnlihse']);
+Route::get('/Selterjpt', [BerandaController::class, 'selterjpt']);
+Route::get('/Pengskdcpns', [BerandaController::class, 'pengskdcpns']);
+Route::get('/Sosmysapk', [BerandaController::class, 'sosmysapk']);
