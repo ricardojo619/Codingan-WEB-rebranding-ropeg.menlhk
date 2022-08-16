@@ -17,6 +17,17 @@ Route::get('/', function () {
     return view('index.body');
 });
 
+/* Halaman Admin Test */
+Route::get('/adminDashboard', function () {
+    return view('admin.index');
+});
+
+Route::get('/adminBerita', function () {
+    return view('admin.berita');
+});
+
+/* Halaman Front-end */
+
 Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/beranda', [BerandaController::class, 'beranda']);
 Route::get('/beranda/struktur', [BerandaController::class, 'struktur']);
