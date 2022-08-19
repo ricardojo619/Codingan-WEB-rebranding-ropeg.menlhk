@@ -25,7 +25,7 @@
           <ul class="navbar-nav mx-auto mb-2 mt-2 me-4">
             
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link" aria-current="page" href="/">Beranda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/Profil">Profil</a>
@@ -195,7 +195,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" id="btncari" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="nav-link" id="btncari" data-bs-toggle="modal" href="#" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></a>
           </li>
           </ul>
           {{-- <form class="d-flex">
