@@ -193,11 +193,34 @@
                 <li><a class="dropdown-item" href="/Struktural">Struktural</a></li> 
               </ul>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="btncari" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+          {{-- <form class="d-flex">
+            <input class="form-control me-1" type="search" placeholder="Pencarian" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          </form> --}}
+          <!-- Modal -->
+          <style>
+            .modal-backdrop{
+              position: inherit;
+            }
+          </style>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header"> 
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input type="text" placeholder="Masukkan Kata Kunci" class="form-control">
+                </div> 
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </nav> 
