@@ -33,7 +33,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="./pages/tables/berita.html" class="nav-link">
+                <a href="/adminBerita" class="nav-link">
                   <i class="nav-icon fas fa-newspaper"></i>
                   <p>Berita</p>
                 </a>

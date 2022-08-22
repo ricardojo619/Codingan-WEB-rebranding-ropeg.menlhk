@@ -6,6 +6,8 @@
 <script src="{{ asset('admin/plugins/bootstrap-switch/css/bootstrap2/bootstrap-switch.css') }}"></script>
 <!-- Summernote -->
 <script src="{{ asset('admin/plugins/summernote/summernote-bs4.min.js') }}"></script>
+<!-- jQuery Knob Chart -->
+<script src="{{ asset('admin/plugins/jquery-knob/jquery.knob.min.js') }}"></script>
 <!-- Select2 -->
 <script src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }}"></script>
 <!-- date-range-picker -->
@@ -29,6 +31,8 @@
 <script src="{{ asset('admin/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
 <script src="{{ asset('admin/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset('admin/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+<!-- overlayScrollbars -->
+<script src="{{ asset('admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('admin/build/js/AdminLTE.js') }}"></script>
 <!-- Page specific script -->
@@ -242,4 +246,4 @@
   // DropzoneJS Demo Code End
 </script>
 
-<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>

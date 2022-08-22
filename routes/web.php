@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,13 +19,16 @@ Route::get('/', function () {
 });
 
 /* Halaman Admin Test */
+
 Route::get('/adminDashboard', function () {
     return view('admin.index');
 });
+Route::get('/editBerita/{id}', [AdminController::class, 'editBerita']);
+Route::get('/adminBerita', [AdminController::class, 'adminBerita']);
 
-Route::get('/adminBerita', function () {
-    return view('admin.berita');
-});
+Route::post('/tambahBerita', [AdminController::class, 'tambahBerita']);
+
+
 
 /* Halaman Front-end */
 
