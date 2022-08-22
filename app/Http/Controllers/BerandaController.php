@@ -16,6 +16,10 @@ class BerandaController extends Controller
         return view('frontend.main.struktur.index');
     }
 
+    public function detailberita(){
+        return view('frontend.main.berita.detail');
+    }
+
     public function profil(){
         // return view('Navbar.Profil.profil');
         return view('frontend.main.profil.index');

@@ -26,3 +26,8 @@
     </button>
   </div>
 </section>
+<style>
+  .carousel {
+    margin-bottom: 1rem;
+}
+</style>
