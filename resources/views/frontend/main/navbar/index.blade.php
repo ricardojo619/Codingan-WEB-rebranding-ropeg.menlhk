@@ -31,7 +31,7 @@
               <a class="nav-link" href="/Profil">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Berita">Berita</a>
+              <a class="nav-link" href="/detailberita">Berita</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"

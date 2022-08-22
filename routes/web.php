@@ -34,6 +34,7 @@ Route::post('/tambahBerita', [AdminController::class, 'tambahBerita']);
 
 Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/beranda', [BerandaController::class, 'beranda']);
+Route::get('/detailberita', [BerandaController::class, 'detailberita']);
 Route::get('/beranda/struktur', [BerandaController::class, 'struktur']);
 Route::get('/Profil', [BerandaController::class, 'profil']);
 Route::get('/Berita', [BerandaController::class, 'berita']);
