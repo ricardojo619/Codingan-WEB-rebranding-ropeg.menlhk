@@ -8,7 +8,7 @@
     })
 </script>
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="main_navbar">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-navbarr" id="main_navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="{{ asset('img/logoropegklhk.png') }}" alt="" style="width: 50%;height: 50%">
@@ -22,7 +22,7 @@
         </button> --}}
         {{-- id="navbarCollapse"  --}}
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mt-2 me-4">
+          <ul class="navbar-nav mx-auto mb-2 mt-2 me-4 text-white">
             
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/">Beranda</a>

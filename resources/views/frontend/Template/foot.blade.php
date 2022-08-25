@@ -1,4 +1,4 @@
-<footer class="page-footer" style="margin: 0 0 -50px 0;">
+<footer class="page-footer bg-navbarr" style="margin: 0 0 -50px 0;">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-sm-6 col-lg-3 py-3">

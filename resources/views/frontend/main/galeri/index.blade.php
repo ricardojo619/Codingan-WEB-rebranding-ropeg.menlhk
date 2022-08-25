@@ -1,6 +1,6 @@
 <hr class="featurette-divider">
     
-<h2 class="text-center mb-4" style="color: black;">
+<h2 class="text-center mb-4 fw-bold" style="color: black;">
   Galeri
 </h2>
 <hr class="hr-bold mx-auto">
