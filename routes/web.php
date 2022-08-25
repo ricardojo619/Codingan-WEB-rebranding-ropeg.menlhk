@@ -27,6 +27,7 @@ Route::get('/editBerita/{id}', [AdminController::class, 'editBerita']);
 Route::get('/adminBerita', [AdminController::class, 'adminBerita']);
 
 Route::post('/tambahBerita', [AdminController::class, 'tambahBerita']);
+Route::get('/deletePost/{id}',[AdminController::class,'deletePost']);
 
 
 

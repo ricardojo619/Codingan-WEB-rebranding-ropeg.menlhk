@@ -75,6 +75,28 @@
                           <a href="{{ url('editBerita',$lb->id) }}" class="btn btn-warning"><i class="fas fa-user-edit" title="Edit"></i></a>
                           <a href="" class="btn btn-danger" data-toggle="modal" data-target="#modal-hapus"><i class="fas fa-trash" title="Hapus"></i></a>
                         </div>
+                         <!-- modal hapus -->
+                          <div class="modal fade" id="modal-hapus">
+                            <div class="modal-dialog modal-sm">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Hapus</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Apakah Anda Yakin Ingin Menghapus data ini?</p>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+                                  <a class="btn btn-danger" href="{{ url('deletePost',$lb->id)}}">Ya</a>
+                                </div>
+                              </div>
+                              <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                          </div>
                       </td>
                     </tr>
                     @endforeach
@@ -90,28 +112,7 @@
         <!-- /.row -->
       </div>
 
-      <!-- modal hapus -->
-      <div class="modal fade" id="modal-hapus">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Hapus</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Apakah Anda Yakin Ingin Menghapus data ini?</p>
-            </div>
-            <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
-              <button type="button" class="btn btn-danger swalHapus">Ya</button>
-            </div>
-          </div>
-          <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-      </div>
+     
       <!-- /.modal -->
 
       <!-- modal tambah -->

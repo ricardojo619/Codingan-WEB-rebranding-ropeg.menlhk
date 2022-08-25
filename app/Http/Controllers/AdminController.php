@@ -44,6 +44,13 @@ class AdminController extends Controller
         return view('admin.partial.crud.editBerita');
     }
 
+    public function deletePost($id){
+
+        $data = Post::find($id);
+        $data->delete();
+        return redirect()->back()->with('message', 'User berhasil dihapus!');
+    }
+
     public function editIsiBerita(Request $request,$id){
         $this->validate($request,[
             'id' => required,
