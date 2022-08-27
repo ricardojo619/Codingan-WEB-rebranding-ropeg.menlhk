@@ -10,8 +10,8 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-navbarr" id="main_navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="{{ asset('img/logoropegklhk.png') }}" alt="" style="width: 50%;height: 50%">
+        <a class="navbar-brand">
+          <img src="{{ asset('img/logoheadfoot.png') }}" alt="" style="width: 95%;height: 90%">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

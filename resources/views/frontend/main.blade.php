@@ -16,7 +16,7 @@
         padding: 7px;
     }
   </style>
-  <hr class="hr-bold mx-auto">
+  <hr class="hr-bold mx-auto" style=" width:13.5%;">
   <div class="row">
     <div class="col-md-4">
         <div class="text-center">
@@ -98,9 +98,12 @@
                         <td style="text-align: right;padding-right: 50px"></td>
                     </tr>
                     <tr>
-                        <td class="fw-bold">Total</td>
+                        <td class="fw-bold fs-5">Total</td>
                         <td>:</td>
-                        <td class="fw-bold" style="text-align: right;padding-right: 50px">10</td>
+                        <td class="fw-bold fs-5" style="text-align: right;padding-right: 50px">10</td>
+                    </tr>
+                    <tr  style="padding-top: -10px !important">
+                        <td colspan="7" class="fs-8"> &nbsp; <i>Data SIMPEG per 25 Agustus 2022, bersifat dinamis.</i><td>
                     </tr>
                   </table>
                    

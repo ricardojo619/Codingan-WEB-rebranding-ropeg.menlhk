@@ -1,9 +1,9 @@
-<footer class="page-footer bg-navbarr" style="margin: 0 0 -50px 0;">
+<footer class="page-footer bg-navbarr" style="margin: 0 0 -50px 0; background-color :#005f73">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-sm-6 col-lg-3 py-3">
-            <img src="{{ asset('img/logoropegklhk.png') }}" style="width:100%;height: 20%;" alt="">
-          <h4 class="mt-4">Media Sosial</h4>
+            <img src="{{ asset('img/logoheadfoot.png') }}" style="width:150%;height: 10%;" alt="">
+          <h4 class="mt-4 hw-bold">Media Sosial</h4>
           <ul class="footer-menu">
             <a href="https://www.instagram.com/ropegklhk/" target="_blank"><span class="mai-logo-instagram"></span> ropegklhk</a>
             <br>
@@ -37,3 +37,11 @@
     </div>
   </footer>
 
+  <style>
+    .page-footer {
+   
+    padding-top: 25px;
+    padding-bottom: 16px;
+    
+}
+  </style>

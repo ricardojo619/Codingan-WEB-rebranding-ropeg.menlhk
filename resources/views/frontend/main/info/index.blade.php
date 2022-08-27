@@ -1,61 +1,131 @@
-<section>
-  <h2 class="text-center mb-4 mt-3 fw-bold" style="color: black;">
+<section class="bg-white">
+  <div class="mt-3"></div>
+  <div class="container mt-6">
+      <div class="row mt-6">
+          <div class="col-md-12 mt-6">
+              <div class="row mt-2">
+                  <div class="col-md-12 mt-6">
+                      <div class="h4 pb-2  text-center text-uppercase" style="margin-top:15px ;margin-bottom:15px ;">
+                          <h2 class="text-center mb-4 mt-2 fw-bold" style="color: black;">
     Informasi Terbaru
   </h2>
-  <hr class="hr-bold mx-auto">
-<div class="container">
+  <hr class="hr-bold mx-auto"style = "width: 25.5%;">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
 
-  <div class="card-group row">
+                  <div class="col-md-4 mb-2">
+                      <a href="http://" class="text-dark text-decoration-none">
+                          <div class="card h-95 shadow mb-5 bg-body rounded">
+                              <div class="card-img">
+                                  <img src="https://picsum.photos/id/6/600/400" class="w-100 rounded" alt="">
+                              </div>
+                              <div class="card-body">
 
-<!-- update stream -->
-    <div class="col-lg-4 d-flex align-items-stretch">
-      <div class="card" style="width: 27rem;">
-        <img class="card-img-top" src="{{ asset('img/imgcap.png')}}" class="card-img-top" alt="...">
-        <div class="card-body d-flex flex-column">
-          {{-- <h5 class="card-title mt-4" style="font-weight:700;text-align: center;">Seleksi Terbuka Pengisian JPT di Lingkungan Sekretariat Jendral DPR RI</h5> --}}
-          <h4 class="p_fontss fs-2 fw-bold" style="font-size: 20px !important;    width: 100%;
-          height: 68px;
-          overflow: hidden;
-          text-overflow: ellipsis;padding: 0;">Seleksi Terbuka Pengisian JPT di Lingkungan Sekretariat Jendral DPR RI</h4>
-          <p class="card-text mt-auto;">28 Agustus 2022</p>
-          <a class="mt-auto mx-auto btn bg-darkku text-white mt-3 text-uppercase round" href="/Selterjpt">Selengkapnya &raquo;</a>
-        </div>
-      </div>
-    </div>
+                                  <p style="width: 100%;
+                              height: 50px;
+                              overflow: hidden;
+                              text-overflow: ellipsis;"
+                                      class="_pfonts fw-bold">Lorem ipsum dolor sit amet
+                                      consectetur,
+                                      adipisicing elit.
+                                      Omnis qui, temporibus
+                                      consequatur deleniti autem voluptatibus doloremque! Dicta, cumque rem?
+                                      Doloremque cupiditate numquam neque aut dicta!</p>
 
-    <div class="col-lg-4 d-flex align-items-stretch">
-      <div class="card" style="width: 27rem;">
-        <img class="card-img-top" src="{{ asset('img/imgcap.png')}}" class="card-img-top" alt="...">
-        <div class="card-body d-flex flex-column">
-            {{-- <h5 class="card-title mt-4" style="font-weight:700;text-align: center;">Pengumuman SKD CPNS 2022</h5> --}}
-            <h4 class="p_fontss fs-2 fw-bold" style="font-size: 20px !important;    width: 100%;
-            height: 68px;
-            overflow: hidden;
-            text-overflow: ellipsis;padding: 0;">Pengumuman SKD CPNS 2022</h4>
-            <p class="card-text mt-auto">28 Agustus 2022</p>
-            <a class="mt-auto mx-auto btn bg-darkku text-white mt-3 text-uppercase round" href="/Pengskdcpns">Selengkapnya &raquo;</a>
-        </div>
-      </div>
-    </div>
-      
+                                  09 Juli 2020
+                              </div>
+                              <div class="position-relative" style="margin: 40px 10px 25px 0;">
+                                  <div class="bg-white position-absolute bottom-0 end-0">
+                                      {{-- <button class="btn bg-dark text-white btn-sm text-uppercase">Selengkapnya</button> --}}
+                                      <button type="button" class="btn btn-primary btn-xs text-uppercase"
+                                              style="padding: 2px 5px;
+                                              font-size: 14px;background-color: #207ab9">
+                                        Lebih Detail
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
 
-    <div class="col-lg-4 d-flex align-items-stretch">
-      <div class="card" style="width: 27rem;">
-        <img class="card-img-top" src="{{ asset('img/imgcap.png')}}" class="card-img-top" alt="...">
-        <div class="card-body d-flex flex-column">
-          {{-- <h5 class="card-title mt-4" style="font-weight:700;text-align: center;">Sosialisasi SIMPEG dan MySAPK 2022</h5> --}}
-          <h4 class="p_fontss fs-2 fw-bold" style="font-size: 20px !important;    width: 100%;
-          height: 68px;
-          overflow: hidden;
-          text-overflow: ellipsis;padding: 0;">Sosialisasi SIMPEG dan MySAPK 2022</h4>
-          <p class="card-text mt-auto">28 Agustus 2022</p>
-          <a class="mt-auto mx-auto btn bg-darkku text-white mt-3 text-uppercase round" href="/Sosmysapk">Selengkapnya &raquo;</a>
-        </div>
+                  <div class="col-md-4 mb-5">
+                      <a href="http://" class="text-dark text-decoration-none">
+                          <div class="card h-95 shadow mb-5 bg-body rounded">
+                              <div class="card-img">
+                                  <img src="https://picsum.photos/id/9/600/400" class="w-100 rounded" alt="">
+                              </div>
+                              <div class="card-body">
+
+                                  <p style="width: 100%;
+                              height: 50px;
+                              overflow: hidden;
+                              text-overflow: ellipsis;"
+                                      class="_pfonts fw-bold">Lorem ipsum dolor sit amet
+                                      consectetur,
+                                      adipisicing elit.
+                                      Omnis qui, temporibus
+                                      consequatur deleniti autem voluptatibus doloremque! Dicta, cumque rem?
+                                      Doloremque cupiditate numquam neque aut dicta!</p>
+
+                                  09 Juli 2020
+                              </div>
+                              <div class="position-relative" style="margin: 40px 10px 25px 0;">
+                                <div class="bg-white position-absolute bottom-0 end-0">
+                                    {{-- <button class="btn bg-dark text-white btn-sm text-uppercase">Selengkapnya</button> --}}
+                                    <button type="button" class="btn btn-primary btn-xs text-uppercase"
+                                            style="padding: 2px 5px;
+                                            font-size: 14px;background-color: #207ab9">
+                                      Lebih Detail
+                                    </button>
+                                </div>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+
+                  <div class="col-md-4 mb-5">
+                      <a href="http://" class="text-dark text-decoration-none">
+                          <div class="card h-95 shadow mb-5 bg-body rounded">
+                              <div class="card-img">
+                                  <img src="https://picsum.photos/id/62/600/400" class="w-100 rounded" alt="">
+                              </div>
+                              <div class="card-body">
+
+                                  <p style="width: 100%;
+                              height: 50px;
+                              overflow: hidden;
+                              text-overflow: ellipsis;"
+                                      class="_pfonts fw-bold">Lorem ipsum dolor sit amet
+                                      consectetur,
+                                      adipisicing elit.
+                                      Omnis qui, temporibus
+                                      consequatur deleniti autem voluptatibus doloremque! Dicta, cumque rem?
+                                      Doloremque cupiditate numquam neque aut dicta!</p>
+
+                                  09 Juli 2020
+                              </div>
+                              <div class="position-relative" style="margin: 40px 10px 25px 0;">
+                                <div class="bg-white position-absolute bottom-0 end-0">
+                                    {{-- <button class="btn bg-dark text-white btn-sm text-uppercase">Selengkapnya</button> --}}
+                                    <button type="button" class="btn btn-primary btn-xs text-uppercase"
+                                            style="padding: 2px 5px;
+                                            font-size: 14px;background-color: #207ab9">
+                                      Lebih Detail
+                                    </button>
+                                </div>
+                            </div>
+                          </div>
+                      </a>
+                  </div>
+
+              </div> 
+
+          </div>
+
       </div>
   </div>
-  
-
-
 </section>
 <style>
 .p_fontss {

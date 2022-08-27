@@ -5,7 +5,7 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner" style="padding-top: 65px;">
+    <div class="carousel-inner" style="padding-top: 35px;">
       <div class="carousel-item active">
         <img src="{{ asset('img/carousel-item/tujuhbelasan.png') }}" class="d-block w-100" alt="...">
       </div>
@@ -28,6 +28,6 @@
 </section>
 <style>
   .carousel {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
 }
 </style>

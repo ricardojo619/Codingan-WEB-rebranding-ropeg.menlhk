@@ -16,7 +16,7 @@
         </nav>
         <p class="text-capitalize fs-2 fw-bold">Profil Biro Kepegawaian dan Organisasi Kementerian Lingkungan Hidup dan Kehutanan</p>
         <p class="fw-lighter fs-6" style="color: #a0a0a0b3;">2 juli 2022, Dilihat 233 Kali</p>
-        <img src="{{ asset('img/gedung manggala.jpg') }}">
+        <img src="{{ asset('img/gedung manggala.jpg') }}" class='mb-4'>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia temporibus quos quia, 
             excepturi nemo mollitia eum molestias illo ea eaque atque optio voluptatibus culpa repellendus 
             ad distinctio earum neque! Omnis sapiente laboriosam ad a dolorem totam iusto? Libero accusamus velit, beatae ad itaque optio enim voluptatum, est laborum sed earum voluptatibus, iure iste nam. Eum tenetur excepturi sint, pariatur adipisci accusantium quis eaque magni, qui libero distinctio accusamus reiciendis. Ut, aut. Aliquid quae consequuntur vitae ipsum accusantium porro aspernatur quibusdam eveniet, facere molestias enim ut, quos voluptatibus. Ipsam cumque perspiciatis in eos animi dolore consectetur dicta facilis fugit possimus.</p>

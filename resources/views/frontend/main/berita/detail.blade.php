@@ -14,7 +14,7 @@
             <li class="breadcrumb-item active" aria-current="page">Berita</li>
           </ol>
         </nav>
-        <p class="text-capitalize fs-2 fw-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p class="text-capitalize fs-2 fw-bold">Pendaftaran CASN dan PPPK KLHK 2022 Telah Dibuka</p>
         <p class="fw-lighter fs-6" style="color: #a0a0a0b3;">2 juli 2022, Dilihat 233 Kali</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia temporibus quos quia, 
             excepturi nemo mollitia eum molestias illo ea eaque atque optio voluptatibus culpa repellendus 
@@ -251,17 +251,6 @@ a:hover{
   background: #c12127;
 }
 /*  */
-    .p_font { 
-    font-size: 16px;
-    overflow: hidden;
-    line-height: normal;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    padding: 0 10px 5px 10px; 
-  }.p_font{
-    display: -webkit-box;
-  }
+
   </style>
 @endsection
