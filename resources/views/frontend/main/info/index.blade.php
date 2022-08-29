@@ -27,12 +27,7 @@
                               height: 50px;
                               overflow: hidden;
                               text-overflow: ellipsis;"
-                                      class="_pfonts fw-bold">Lorem ipsum dolor sit amet
-                                      consectetur,
-                                      adipisicing elit.
-                                      Omnis qui, temporibus
-                                      consequatur deleniti autem voluptatibus doloremque! Dicta, cumque rem?
-                                      Doloremque cupiditate numquam neque aut dicta!</p>
+                                      class="_pfonts fw-bold"  href="/Simpegsapk">Seleksi Terbuka Pengisian JPT di Lingkungan Sekretariat Jenderal DPR RI</p>
 
                                   09 Juli 2020
                               </div>
@@ -42,7 +37,7 @@
                                       <button type="button" class="btn btn-primary btn-xs text-uppercase"
                                               style="padding: 2px 5px;
                                               font-size: 14px;background-color: #207ab9">
-                                        Lebih Detail
+                                        Selengkapnya
                                       </button>
                                   </div>
                               </div>
@@ -62,12 +57,7 @@
                               height: 50px;
                               overflow: hidden;
                               text-overflow: ellipsis;"
-                                      class="_pfonts fw-bold">Lorem ipsum dolor sit amet
-                                      consectetur,
-                                      adipisicing elit.
-                                      Omnis qui, temporibus
-                                      consequatur deleniti autem voluptatibus doloremque! Dicta, cumque rem?
-                                      Doloremque cupiditate numquam neque aut dicta!</p>
+                                      class="_pfonts fw-bold">Pengumuman SKD CPNS 2021</p>
 
                                   09 Juli 2020
                               </div>
@@ -77,7 +67,7 @@
                                     <button type="button" class="btn btn-primary btn-xs text-uppercase"
                                             style="padding: 2px 5px;
                                             font-size: 14px;background-color: #207ab9">
-                                      Lebih Detail
+                                      Selengkapnya
                                     </button>
                                 </div>
                             </div>
@@ -97,12 +87,7 @@
                               height: 50px;
                               overflow: hidden;
                               text-overflow: ellipsis;"
-                                      class="_pfonts fw-bold">Lorem ipsum dolor sit amet
-                                      consectetur,
-                                      adipisicing elit.
-                                      Omnis qui, temporibus
-                                      consequatur deleniti autem voluptatibus doloremque! Dicta, cumque rem?
-                                      Doloremque cupiditate numquam neque aut dicta!</p>
+                                      class="_pfonts fw-bold">Sosialisasi SIMPEG dan MySAPK 2021</p>
 
                                   09 Juli 2020
                               </div>
@@ -112,7 +97,7 @@
                                     <button type="button" class="btn btn-primary btn-xs text-uppercase"
                                             style="padding: 2px 5px;
                                             font-size: 14px;background-color: #207ab9">
-                                      Lebih Detail
+                                       Selengkapnya
                                     </button>
                                 </div>
                             </div>
