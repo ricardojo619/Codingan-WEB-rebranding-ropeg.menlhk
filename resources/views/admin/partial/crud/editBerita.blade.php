@@ -23,7 +23,7 @@
                 <h3 class="card-title">Edit Berita</h3>
               </div>
 
-              <form action="{{ url('/editIsiBerita') }}" method="POST" enctype="multipart/form-data">
+              <form action="{{ url('/editIsiBerita')}}/{{ $berita->id }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="modal-footer justify-content-between">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                  <button type="button" class="btn btn-warning swalEdit">Simpan</button>
+                  <button type="submit" class="btn btn-warning swalEdit">Simpan</button>
                 </div>
                 <!-- /.card-body -->
               </form>

@@ -41,7 +41,7 @@ class AdminController extends Controller
     public function editBerita($id){
         $berita = Post::find($id);
 
-        return view('admin.partial.crud.editBerita');
+        return view('admin.partial.crud.editBerita', compact('berita'));
     }
 
     public function deletePost($id){
@@ -52,13 +52,7 @@ class AdminController extends Controller
     }
 
     public function editIsiBerita(Request $request,$id){
-        $this->validate($request,[
-            'id' => required,
-            'judulBerita' => required,
-            'thumbnail' => required,
-            'jenisBerita' => required,
-            'isiBerita' => required,
-        ]);
+        
 
         $berita = Post::findOrFail($id);
 
@@ -69,6 +63,6 @@ class AdminController extends Controller
 
         $berita->save();
         
-        return view('admin.form.editAccount', compact('user'));
+        return redirect('/adminBerita')->with('message', 'User berhasil dihapus!');
     }
 }

@@ -24,6 +24,7 @@ Route::get('/adminDashboard', function () {
     return view('admin.index');
 });
 Route::get('/editBerita/{id}', [AdminController::class, 'editBerita']);
+Route::post('/editIsiBerita/{id}', [AdminController::class, 'editIsiBerita']);
 Route::get('/adminBerita', [AdminController::class, 'adminBerita']);
 
 Route::post('/tambahBerita', [AdminController::class, 'tambahBerita']);
