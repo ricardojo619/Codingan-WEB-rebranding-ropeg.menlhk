@@ -119,7 +119,7 @@
                     </ul>
                   </li>
                   <li><a class="dropdown-item" href="/Pengel">Pencantuman Gelar</a></li>
-                  <li><a class="dropdown-item" href="/Ralnamnip">Ralat NIP</a></li>
+                  <li><a class="dropdown-item" href="/Ralnamnip">Ralat Nama/NIP</a></li>
                    
               </ul>
             </li>  
@@ -187,8 +187,26 @@
                 Informasi
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                
-                <li><a class="dropdown-item" href="/BUP">BUP</a></li> 
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      BUP 2021
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li><a class="dropdown-item" href="/bupjanuari">Januari</a></li>
+                      <li><a class="dropdown-item" href="/bupfebruari">Februari</a></li>
+                      <li><a class="dropdown-item" href="/bupmaret">Maret</a></li>  
+                      <li><a class="dropdown-item" href="/bupapril">April</a></li> 
+                      <li><a class="dropdown-item" href="/bupmei">Mei</a></li> 
+                      <li><a class="dropdown-item" href="/bupjuni">Juni</a></li>
+                      <li><a class="dropdown-item" href="/bupjuli">Juli</a></li>  
+                      <li><a class="dropdown-item" href="/bupagustus">Agustus</a></li> 
+                      <li><a class="dropdown-item" href="/bupseptember">September</a></li> 
+                      <li><a class="dropdown-item" href="/bupoktober">Oktober</a></li> 
+                      <li><a class="dropdown-item" href="/bupnovember">November</a></li> 
+                      <li><a class="dropdown-item" href="/bupdesember">Desember</a></li> 
+                  </ul>
+          </li>
                 <li><a class="dropdown-item" href="/KPO">KPO</a></li> 
                 <li><a class="dropdown-item" href="/Struktural">Struktural</a></li> 
               </ul>

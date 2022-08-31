@@ -95,3 +95,17 @@ Route::get('/Btnlihse', [BerandaController::class, 'btnlihse']);
 Route::get('/Selterjpt', [BerandaController::class, 'selterjpt']);
 Route::get('/Pengskdcpns', [BerandaController::class, 'pengskdcpns']);
 Route::get('/Sosmysapk', [BerandaController::class, 'sosmysapk']);
+
+
+Route::get('/bupjanuari', [BerandaController::class, 'bupjanuari']);
+Route::get('/bupfebruari', [BerandaController::class, 'bupfebruari']);
+Route::get('/bupmaret', [BerandaController::class, 'bupmaret']);
+Route::get('/bupapril', [BerandaController::class, 'bupapril']);
+Route::get('/bupmei', [BerandaController::class, 'bupmei']);
+Route::get('/bupjuni', [BerandaController::class, 'bupjuni']);
+Route::get('/bupjuli', [BerandaController::class, 'bupjuli']);
+Route::get('/bupagustus', [BerandaController::class, 'bupagustus']);
+Route::get('/bupseptember', [BerandaController::class, 'bupseptember']);
+Route::get('/bupoktober', [BerandaController::class, 'bupoktober']);
+Route::get('/bupnovember', [BerandaController::class, 'bupnovember']);
+Route::get('/bupdesember', [BerandaController::class, 'bupdesember']);
