@@ -10,8 +10,63 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-navbarr" id="main_navbar">
       <div class="container-fluid">
-        <a class="navbar-brand">
-          <img src="{{ asset('img/logoheadfoot.png') }}" alt="" style="width: 95%;height: 90%">
+        {{-- <a class="navbar-brand"> 
+          <style> 
+            @media (min-width: 576px) {  }
+ 
+            @media (min-width: 768px) { 
+              .navImage{
+                width: 95%;
+                height: 90%;
+              }
+             }
+ 
+            @media (min-width: 992px) { 
+              .navImage{
+                width: 95%;height: 90%;
+              }
+            }
+ 
+            @media (min-width: 1200px) { 
+              .navImage{
+                width: 95%;height: 90%;
+              }
+            }
+  
+          </style>
+          <img src="{{ asset('img/logoheadfoot.png') }}" class="navImage">
+        </a> --}}
+        <style>
+          .navbar-brand>img {
+              display: block;
+          }
+          .img-responsive, .berita_baca > img, .berita_baca a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+              display: block;
+              width: 100%;
+              height: auto;
+              padding: 5px 0 0 0;
+          }
+          .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+              display: block;
+              max-width: 100%;
+              height: auto;
+          }
+          img {
+              vertical-align: middle;
+          }
+          @media (max-width: 767px)
+          {
+            .visible-xs {
+              display: block !important;
+            }
+          }
+          .visible-xs, .visible-sm, .visible-md, .visible-lg {
+              display: none !important;
+          }
+        </style>
+        <a class="navbar-brand" href="http://ropeg.menlhk.go.id/">
+          <img alt="Biro Kepegawaian dan Organisasi" src="http://ropeg.menlhk.go.id/assets/image/img/BIROPEG-KLHK.png" class="img-responsive hidden-xs hidden-sm">
+          <img alt="Biro Kepegawaian dan Organisasi" src="http://ropeg.menlhk.go.id/assets/image/img/logo-xs.png" class="img-responsive visible-xs visible-sm">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
