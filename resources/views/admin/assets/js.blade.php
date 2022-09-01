@@ -1,6 +1,4 @@
 <!-- REQUIRED SCRIPTS -->
-<!-- jQuery -->
-<script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap -->
 <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- Bootstrap 4 -->
@@ -83,8 +81,17 @@
     })
   })
 </script>
+
+<script>
+    $('#summernote').summernote({
+      tabsize: 2,
+      height: 100
+    });
+  </script>
+
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('admin/dist/js/pages/dashboard.js') }}"></script>
 <script src="{{ asset('admin/dist/js/pages/dashboard2.js') }}"></script>
+

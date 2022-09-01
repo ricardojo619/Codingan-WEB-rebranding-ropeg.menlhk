@@ -14,12 +14,12 @@
                   </div>
               </div>
               <div class="row">
-
+                @for ($i = 0; $i < 3; $i++)
                   <div class="col-md-4 mb-2">
                       <a href="http://" class="text-dark text-decoration-none">
                           <div class="card h-95 shadow mb-5 bg-body rounded">
                               <div class="card-img">
-                                  <img src="https://picsum.photos/id/6/600/400" class="w-100 rounded" alt="">
+                                  <img src="{{asset('Gambar Berita/')}}/{{ $berita[$i]->thumbnail }}" class="w-100 rounded" alt="">
                               </div>
                               <div class="card-body">
 
@@ -27,9 +27,9 @@
                               height: 50px;
                               overflow: hidden;
                               text-overflow: ellipsis;"
-                                      class="_pfonts fw-bold"  href="/Simpegsapk">Seleksi Terbuka Pengisian JPT di Lingkungan Sekretariat Jenderal DPR RI</p>
+                                      class="_pfonts fw-bold"  href="/Simpegsapk">{{ $berita[$i]->judulBerita }}</p>
 
-                                  09 Juli 2020
+                                  {{ $berita[$i]->date }}
                               </div>
                               <div class="position-relative" style="margin: 40px 10px 25px 0;">
                                   <div class="bg-white position-absolute bottom-0 end-0">
@@ -44,68 +44,9 @@
                           </div>
                       </a>
                   </div>
+                  @endfor
 
-                  <div class="col-md-4 mb-5">
-                      <a href="http://" class="text-dark text-decoration-none">
-                          <div class="card h-95 shadow mb-5 bg-body rounded">
-                              <div class="card-img">
-                                  <img src="https://picsum.photos/id/9/600/400" class="w-100 rounded" alt="">
-                              </div>
-                              <div class="card-body">
-
-                                  <p style="width: 100%;
-                              height: 50px;
-                              overflow: hidden;
-                              text-overflow: ellipsis;"
-                                      class="_pfonts fw-bold">Pengumuman SKD CPNS 2022</p>
-
-                                  09 Juli 2020
-                              </div>
-                              <div class="position-relative" style="margin: 40px 10px 25px 0;">
-                                <div class="bg-white position-absolute bottom-0 end-0">
-                                    {{-- <button class="btn bg-dark text-white btn-sm text-uppercase">Selengkapnya</button> --}}
-                                    <button type="button" class="btn btn-primary btn-xs text-uppercase"
-                                            style="padding: 2px 5px;
-                                            font-size: 14px;background-color: #207ab9">
-                                      Selengkapnya
-                                    </button>
-                                </div>
-                            </div>
-                          </div>
-                      </a>
-                  </div>
-
-                  <div class="col-md-4 mb-5">
-                      <a href="http://" class="text-dark text-decoration-none">
-                          <div class="card h-95 shadow mb-5 bg-body rounded">
-                              <div class="card-img">
-                                  <img src="https://picsum.photos/id/62/600/400" class="w-100 rounded" alt="">
-                              </div>
-                              <div class="card-body">
-
-                                  <p style="width: 100%;
-                              height: 50px;
-                              overflow: hidden;
-                              text-overflow: ellipsis;"
-                                      class="_pfonts fw-bold">Sosialisasi SIMPEG dan MySAPK 2022</p>
-
-                                  09 Juli 2020
-                              </div>
-                              <div class="position-relative" style="margin: 40px 10px 25px 0;">
-                                <div class="bg-white position-absolute bottom-0 end-0">
-                                    {{-- <button class="btn bg-dark text-white btn-sm text-uppercase">Selengkapnya</button> --}}
-                                    <button type="button" class="btn btn-primary btn-xs text-uppercase"
-                                            style="padding: 2px 5px;
-                                            font-size: 14px;background-color: #207ab9">
-                                       Selengkapnya
-                                    </button>
-                                </div>
-                            </div>
-                          </div>
-                      </a>
-                  </div>
-
-              </div> 
+              </div>
 
           </div>
 
@@ -127,4 +68,4 @@
     padding: 0 10px 5px 10px;
 }
 </style>
-<!-- Stashed changes --> 
+<!-- Stashed changes -->

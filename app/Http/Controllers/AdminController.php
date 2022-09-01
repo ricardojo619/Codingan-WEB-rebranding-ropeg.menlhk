@@ -25,17 +25,17 @@ class AdminController extends Controller
         $berita->judulBerita = $request->judulBerita;
         $thumbnail = $request->thumbnail;
         $thumbnailFile = $request->judulBerita.'.'.$thumbnail->getClientoriginalExtension();
-        $path = public_path().'/Thumbnail/'.$request->judulBerita;
+        $path = public_path().'/Gambar Berita';
         File::makeDirectory($path, $mode = 0777, true, true);
         $request->thumbnail->move($path,$thumbnailFile);
         $berita->thumbnail=$thumbnailFile;
 
-        $berita->date = Carbon::now()->format('d-m-Y');
+        $berita->date = Carbon::now()->format('l d m Y');
         $berita->jenisBerita = $request->jenisBerita;
         $berita->isiBerita = $request->isiBerita;
         $berita->save();
 
-        return redirect()->back()->with('message', 'Data berhasil ditambahkan!');
+        return redirect()->back()->with('Add', 'Berita berhasil ditambahkan!');
     }
 
     public function editBerita($id){
@@ -48,21 +48,26 @@ class AdminController extends Controller
 
         $data = Post::find($id);
         $data->delete();
-        return redirect()->back()->with('message', 'User berhasil dihapus!');
+        return redirect()->back()->with('Delete', 'Berita berhasil dihapus!');
     }
 
     public function editIsiBerita(Request $request,$id){
-        
+
 
         $berita = Post::findOrFail($id);
 
         $berita->judulBerita = $request->judulBerita;
-        $berita->thumbnail = $request->thumbnail;
+        $thumbnail = $request->thumbnail;
+        $thumbnailFile = $request->judulBerita.'.'.$thumbnail->getClientoriginalExtension();
+        $path = public_path().'/Gambar Berita';
+        File::makeDirectory($path, $mode = 0777, true, true);
+        $request->thumbnail->move($path,$thumbnailFile);
+        $berita->thumbnail=$thumbnailFile;
         $berita->jenisBerita = $request->jenisBerita;
         $berita->isiBerita = $request->isiBerita;
 
         $berita->save();
-        
-        return redirect('/adminBerita')->with('message', 'User berhasil dihapus!');
+
+        return redirect('/adminBerita')->with('Edit', 'Berita berhasil diubah');
     }
 }

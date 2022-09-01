@@ -20,7 +20,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DataTables</h1>
+            <h1>Dashboard Berita</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -31,13 +31,30 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
+    @if (session()->has('Add'))
+    <div class="alert alert-success text-center mb-4" style="width: 50%; margin:auto;">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        {{session()->get('Add')}}
+    </div>
+    @endif
+    @if (session()->has('Edit'))
+    <div class="alert alert-warning text-center mb-4" style="width: 50%; margin:auto;">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        {{session()->get('Edit')}}
+    </div>
+    @endif
+    @if (session()->has('Delete'))
+    <div class="alert alert-danger text-center mb-4" style="width: 50%; margin:auto;" >
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        {{session()->get('Delete')}}
+    </div>
+    @endif
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            
+
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">DataTable with default features</h3>
@@ -46,13 +63,13 @@
               <div class="card-body">
                 <div class="row">
                     <div class="col-sm-12 col-md-3 mb-3">
-                      <button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-tambah"><i class="fas fa-users mr-2"></i>Tambah Data</button>      
+                      <button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#modal-tambah"><i class="fas fa-users mr-2"></i>Tambah Data</button>
                     </div>
                 </div>
-                
+
                 <table id="datatable" class="table table-bordered table-striped">
                   <thead>
-                  <tr>
+                  <tr class="text-center">
                     <th>No</th>
                     <th>Judul Berita</th>
                     <th>View</th>
@@ -63,12 +80,12 @@
                   </thead>
                   <tbody>
                     @foreach ($listBerita as $lb )
-                    <tr>
+                    <tr class="text-center">
                       <td>{{ $lb->id }}</td>
                       <td>{{ $lb->judulBerita }}</td>
                       <td>{{ $lb->views }}</td>
                       <td>{{ $lb->date }}</td>
-                      <td><img src={{ asset('Thumbnail/') }}/{{ $lb->thumbnail }} alt="" height="70px"></td>
+                      <td><img src="{{ asset('Gambar Berita/') }}/{{ $lb->thumbnail }}" alt="" height="150px"></td>
                       <td class="text-center py-0 align-middle">
                         <input type="checkbox" checked data-toggle="toggle" data-size="sm" data-onstyle="success" id="status" title="Status">
                         <div class="btn-group btn-group-sm ml-3">
@@ -112,7 +129,7 @@
         <!-- /.row -->
       </div>
 
-     
+
       <!-- /.modal -->
 
       <!-- modal tambah -->

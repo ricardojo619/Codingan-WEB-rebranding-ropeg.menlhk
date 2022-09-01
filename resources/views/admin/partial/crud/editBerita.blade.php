@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin Ropeg | Berita</title>
-
  @include('admin.assets.style')
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -13,6 +12,13 @@
 
   @include('admin.partial.sidebar')
 
+
+  @if (session()->has('message'))
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        {{session()->get('message')}}
+    </div>
+    @endif
   <div class="content-wrapper">
     <section class="content">
       <div class="container-fluid">
@@ -50,9 +56,9 @@
                   <div class="form-group">
                     <label>Isi Berita</label>
                       <textarea id="summernote" name="isiBerita">
-                        
+                        {{ $berita->isiBerita }}
                       </textarea>
-                  </div>                
+                  </div>
                 </div>
                 <div class="modal-footer justify-content-between">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
@@ -60,15 +66,15 @@
                 </div>
                 <!-- /.card-body -->
               </form>
-              
+
             </div>
           </div>
         </div>
       </div>
     </section>
   </div>
- 
-  
+
+
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
@@ -118,9 +124,9 @@
     <div class="form-group">
       <label>Isi Berita</label>
         <textarea id="summernote" name="isiBerita">
-          
+
         </textarea>
-    </div>                
+    </div>
   </div>
   <div class="modal-footer justify-content-between">
     <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>

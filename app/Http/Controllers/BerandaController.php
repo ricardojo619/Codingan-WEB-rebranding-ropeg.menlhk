@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Post;
 
 class BerandaController extends Controller
 {
     //
     public function beranda(){
+        $berita = Post::orderByDesc('id')->get();
         $data = ['title' => 'Beranda - Biro Kepegawaian dan Organisasi KLHK'];
-        return view('frontend.main', $data);
+        return view('frontend.main', $data)->with('berita', $berita);
     }
 
     public function struktur(){
@@ -23,7 +25,7 @@ class BerandaController extends Controller
         return view('frontend.main.berita.detail', $data);
     }
 
-    public function profil(){ 
+    public function profil(){
         $data = ['title' => 'Profil - Biro Kepegawaian dan Organisasi KLHK'];
         return view('frontend.main.profil.index', $data);
     }
@@ -211,7 +213,7 @@ class BerandaController extends Controller
     public function ujgipi(){
         $data = ['title' => 'Ujian GI/PI/PG - Biro Kepegawaian dan Organisasi KLHK'];
         return view('frontend.Navbar.Laykep.Pengempeg.Ujgipi.ujgipi', $data);
-    
+
     }
 
     public function izbell(){
@@ -311,7 +313,7 @@ class BerandaController extends Controller
         $data = ['title' => ' Sosialisasi SIMPEG dan MySAPK 2022 - Biro Kepegawaian dan Organisasi KLHK'];
         return view('Bodyinfoter.Sosmysapk.sosmysapk', $data);
     }
-    
+
 
 // Isi BUP
     public function bupjanuari(){
