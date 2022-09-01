@@ -28,7 +28,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="judul">Judul Berita</label>
-                    <textarea id="judulBerita" class="form-control" rows="3" name="judulBerita"></textarea>
+                    <textarea id="judulBerita" class="form-control" rows="3" name="judulBerita" >{{ $berita->judulBerita }}</textarea>
                   </div>
                   <div class="form-group">
                     <label for="thumbnail">Thumbnail</label><br>

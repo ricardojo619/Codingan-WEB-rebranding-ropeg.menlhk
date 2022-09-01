@@ -6,7 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>ROPEG KLHK - Biro Kepegawaian dan Organisasi KLHK</title>
+    <title>{{ isset($title) ? $title : 'Judul Tidak ada' }}</title>
+    {{-- <title>ROPEG KLHK - Biro Kepegawaian dan Organisasi KLHK</title> --}}
     <link rel="icon" type="image/x-icon" href="{{ asset('img/Lambangklhk.png') }}">
 
     <script src="{{ asset('carousel/bootstrap5.2.bundle.min.js') }}"></script>

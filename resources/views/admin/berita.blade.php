@@ -68,7 +68,7 @@
                       <td>{{ $lb->judulBerita }}</td>
                       <td>{{ $lb->views }}</td>
                       <td>{{ $lb->date }}</td>
-                      <td>1</td>
+                      <td><img src={{ asset('Thumbnail/') }}/{{ $lb->thumbnail }} alt="" height="70px"></td>
                       <td class="text-center py-0 align-middle">
                         <input type="checkbox" checked data-toggle="toggle" data-size="sm" data-onstyle="success" id="status" title="Status">
                         <div class="btn-group btn-group-sm ml-3">

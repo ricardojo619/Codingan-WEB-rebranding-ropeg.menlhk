@@ -57,7 +57,7 @@
                               height: 50px;
                               overflow: hidden;
                               text-overflow: ellipsis;"
-                                      class="_pfonts fw-bold">Pengumuman SKD CPNS 2021</p>
+                                      class="_pfonts fw-bold">Pengumuman SKD CPNS 2022</p>
 
                                   09 Juli 2020
                               </div>
@@ -87,7 +87,7 @@
                               height: 50px;
                               overflow: hidden;
                               text-overflow: ellipsis;"
-                                      class="_pfonts fw-bold">Sosialisasi SIMPEG dan MySAPK 2021</p>
+                                      class="_pfonts fw-bold">Sosialisasi SIMPEG dan MySAPK 2022</p>
 
                                   09 Juli 2020
                               </div>

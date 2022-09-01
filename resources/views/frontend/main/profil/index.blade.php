@@ -15,7 +15,7 @@
           </ol>
         </nav>
         <p class="text-capitalize fs-2 fw-bold">Profil Biro Kepegawaian dan Organisasi Kementerian Lingkungan Hidup dan Kehutanan</p>
-        <p class="fw-lighter fs-6" style="color: #a0a0a0b3;">2 juli 2022, Dilihat 233 Kali</p>
+        <p class=" fs-6" style="color: #a0a0a0b3;">2 juli 2022, Dilihat 233 Kali</p>
         <img src="{{ asset('img/gedung manggala.jpg') }}" class='mb-4'>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia temporibus quos quia, 
             excepturi nemo mollitia eum molestias illo ea eaque atque optio voluptatibus culpa repellendus 

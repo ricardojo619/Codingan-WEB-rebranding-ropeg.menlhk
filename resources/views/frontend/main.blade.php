@@ -103,12 +103,12 @@
                                 <td style="text-align: right;padding-right: 50px"></td>
                             </tr>
                             <tr>
-                                <td class="fw-bold fs-5"> &nbsp; &nbsp; &nbsp; Total</td>
+                                <td class="fw-bold fs-5"> &nbsp; &nbsp;  Total</td>
                                 <td>:</td>
                                 <td class="fw-bold fs-5" style="text-align: right;padding-right: 50px">10</td>
                             </tr>
                             <tr style="padding-top: -10px !important">
-                                <td colspan="6" class="fs-8"> &nbsp; &nbsp; &nbsp;<i>Data SIMPEG per 25 Agustus 2022,
+                                <td colspan="6" class="fs-8"> &nbsp; &nbsp; <i>Data SIMPEG per 25 Agustus 2022,
                                         bersifat dinamis.</i>
                                 <td>
                             </tr>
