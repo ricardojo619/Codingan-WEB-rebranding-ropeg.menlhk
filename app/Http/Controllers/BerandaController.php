@@ -11,8 +11,13 @@ class BerandaController extends Controller
     //
     public function beranda(){
         $berita = Post::orderByDesc('id')->get();
+        $pengumuman = Post::orderByDesc('id')->where('jenisBerita', 'Pengumuman')->get();
+        $event = Post::orderByDesc('id')->where('jenisBerita', 'Event')->get();
+        $infolain = Post::orderByDesc('id')->where('jenisBerita', 'Info Lain')->get();
+
+
         $data = ['title' => 'Beranda - Biro Kepegawaian dan Organisasi KLHK'];
-        return view('frontend.main', $data)->with('berita', $berita);
+        return view('frontend.main', $data)->with('berita', $berita)->with('pengumuman', $pengumuman)->with('event', $event)->with('infolain', $infolain);
     }
 
     public function struktur(){
