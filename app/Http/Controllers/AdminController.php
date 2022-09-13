@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Models\Post;
+use App\Models\Runtext;
 use File;
 
 class AdminController extends Controller
@@ -15,6 +16,42 @@ class AdminController extends Controller
     public function adminBerita(){
         $listBerita = Post::get();
         return view('admin.berita', compact('listBerita'));
+    }
+
+    public function adminRuntext(){
+
+        $listRuntext = Runtext::get();
+        return view('admin.runningText', compact('listRuntext'));
+    }
+
+    public function tambahRuntext(Request $request){
+        $runtext = new Runtext;
+        $runtext->id = $request->id;
+        $runtext->isiText = $request->isiText;
+        $runtext->save();
+
+        return redirect()->back()->with('Add', 'Running Text berhasil ditambahkan!');
+    }
+
+    public function editRuntext($id){
+        $runtext = Runtext::find($id);
+
+        return view('admin.partial.crud.editRunningtext', compact('runtext'));
+    }
+
+    public function updateRuntext(Request $request, $id){
+        $runtext = Runtext::find($id);
+        $runtext->isiText = $request->isiText;
+        $runtext->update();
+
+        return redirect('/adminRuntext')->with('Edit', 'Running Text berhasil diedit!');
+    }
+
+    public function deleteRuntext($id){
+
+        $data = Runtext::find($id);
+        $data->delete();
+        return redirect()->back()->with('Delete', 'Running Text berhasil dihapus!');
     }
 
     public function tambahBerita(Request $request){
@@ -37,6 +74,7 @@ class AdminController extends Controller
 
         return redirect()->back()->with('Add', 'Berita berhasil ditambahkan!');
     }
+
 
     public function editBerita($id){
         $berita = Post::find($id);

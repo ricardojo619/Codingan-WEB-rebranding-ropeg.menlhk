@@ -6,21 +6,23 @@
         <hr class="mx-auto" width="40%">
         <div class="position-relative">
           <div class="position-absolute top-0 start-25">
-            @if ($infolain->count() <= 3)
+            @if ($infolain->count() == '0')
+
+            @elseif ($infolain->count() < '3')
             @for ($p=0; $p<1;$p++)
-            <div class="text-start font-poppin">{{ $infolain[$p]->date }}</div>
+            <div class="text-start font-poppin" style="color: white">{{ $infolain[$p]->date }}</div>
             <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i>
-                <a href="/Bimtekadm" style="color:rgba(2, 83, 107, 0.811)">
+                <a href="/Bimtekadm" style="color:rgba(255, 255, 255, 0.811)">
                     {{ $infolain[$p]->judulBerita }}
                 </a>
             </div>
             <br>
-             @endfor
+            @endfor
             @else
             @for ($p=0; $p<3;$p++)
             <div class="text-start font-poppin">{{ $infolain[$p]->date }}</div>
             <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i>
-                <a href="/Bimtekadm" style="color:rgba(2, 83, 107, 0.811)">
+                <a href="/Bimtekadm" style="color:rgba(255, 255, 255, 0.811)">
                     {{ $infolain[$p]->judulBerita }}
                 </a>
             </div>
@@ -37,7 +39,9 @@
         <hr class="mx-auto" width="40%">
         <div class="position-relative">
           <div class="position-absolute top-0 start-18">
-            @if ($event->count() < '3')
+            @if ($event->count() == '0')
+
+            @elseif ($event->count() < '3')
             @for ($p=0; $p<1;$p++)
             <div class="text-start font-poppin" style="color: white">{{ $event[$p]->date }}</div>
             <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i>
@@ -46,7 +50,7 @@
                 </a>
             </div>
             <br>
-             @endfor
+            @endfor
             @else
             @for ($p=0; $p<3;$p++)
             <div class="text-start font-poppin">{{ $event[$p]->date }}</div>
@@ -73,36 +77,29 @@
             <div style="">
               <hr class="mx-auto" width="40%">
               <div style="padding-left: 70px">
-                {{-- @for ($p=0; $p<3;$p++)
-                <div class="text-start font-poppin">{{ $pengumuman[$p]->date }}</div>
+                @if ($pengumuman->count() == '0')
+
+                @elseif ($pengumuman->count() < '3')
+                @for ($p=0; $p<1;$p++)
+                <div class="text-start font-poppin" style="color: white">{{ $pengumuman[$p]->date }}</div>
                 <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i>
-                    <a href="/Bimtekadm" style="color:rgba(2, 83, 107, 0.811)">
+                    <a href="/Bimtekadm" style="color:rgba(255, 255, 255, 0.811)">
                         {{ $pengumuman[$p]->judulBerita }}
                     </a>
                 </div>
                 <br>
-                @endfor --}}
-                @if ($pengumuman->count() < '3')
-            @for ($p=0; $p<1;$p++)
-            <div class="text-start font-poppin" style="color: white">{{ $event[$p]->date }}</div>
-            <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i>
-                <a href="/Bimtekadm" style="color:rgba(2, 83, 107, 0.811">
-                    {{ $pengumuman[$p]->judulBerita }}
-                </a>
-            </div>
-            <br>
-             @endfor
-            @else
-            @for ($p=0; $p<3;$p++)
-            <div class="text-start font-poppin">{{ $pengumuman[$p]->date }}</div>
-            <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i>
-                <a href="/Bimtekadm" style="color:rgba(2, 83, 107, 0.811)">
-                    {{ $pengumuman[$p]->judulBerita }}
-                </a>
-            </div>
-            <br>
-            @endfor
-            @endif
+                @endfor
+                @else
+                @for ($p=0; $p<3;$p++)
+                <div class="text-start font-poppin">{{ $pengumuman[$p]->date }}</div>
+                <div class="text-start font-poppin" style="font-size: 20px" <i class="fa fa-text-width" aria-hidden="true"></i>
+                    <a href="/Bimtekadm" style="color:rgba(255, 255, 255, 0.811)">
+                        {{ $pengumuman[$p]->judulBerita }}
+                    </a>
+                </div>
+                <br>
+                @endfor
+                @endif
               </div>
             </div>
           </div>

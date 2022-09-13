@@ -23,12 +23,21 @@ Route::get('/', function () {
 Route::get('/adminDashboard', function () {
     return view('admin.index');
 });
+
+/* Berita */
 Route::get('/editBerita/{id}', [AdminController::class, 'editBerita']);
 Route::post('/editIsiBerita/{id}', [AdminController::class, 'editIsiBerita']);
 Route::get('/adminBerita', [AdminController::class, 'adminBerita']);
-
 Route::post('/tambahBerita', [AdminController::class, 'tambahBerita']);
 Route::get('/deletePost/{id}',[AdminController::class,'deletePost']);
+
+/*Run Text */
+Route::get('/adminRuntext', [AdminController::class, 'adminRuntext']);
+Route::post('/tambahRuntext', [AdminController::class, 'tambahRuntext']);
+Route::get('/editRuntext/{id}', [AdminController::class, 'editRuntext']);
+Route::post('/editRuntext/{id}/edit', [AdminController::class, 'updateRuntext']);
+Route::get('/deleteRuntext/{id}',[AdminController::class,'deleteRuntext']);
+
 
 
 

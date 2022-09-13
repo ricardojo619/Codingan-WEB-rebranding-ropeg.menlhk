@@ -1,14 +1,18 @@
 <div class="container mt-4 mb-4">
-    <div class="row"> 
+    <div class="row">
         <div class="list-group">
             {{-- <marquee class="" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="7" behavior="scroll"> --}}
             <li class="list-group-item text-white" aria-disabled="true" style="padding-bottom: 0;background-color:#000!important">
                 <marquee loop="1000" class="fw-bold background" style="margin: -5px 0px 10px 0px;
                 padding: 15px 0px 0 0;
-                font-size: 20px;" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="8"> 
-                     <a>PEMUTAKHIRAN DATA MANDIRI (PDM) ASN MELALUI MySAPK MULAI JULI-OKTOBER 2021  </a>  
-                       &nbsp;&nbsp; || &nbsp;&nbsp;
-                     <a>APABILA ASN DALAM LINGKUP KLHK MENGALAMI KESULITAN DALAM AKSES SIMPEG DAN MySAPK SEGERA HUBUNGI ADMIN BIRO KEPEGAWAIAN DAN ORGANISASI </a> 
+                font-size: 20px;" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="8">
+                @if ($runText->count() != '0' )
+                <a> {{ $runText[0]->isiText}}  </a>
+                &nbsp;&nbsp; || &nbsp;&nbsp;
+                <a> {{ $runText[1]->isiText}}  </a>
+                @else
+
+                @endif
                 </marquee>
             </li>
         </div>

@@ -47,15 +47,15 @@
               </li>
 
               <li class="nav-item">
-                <a href="./pages/tables/runningtxt.html" class="nav-link">
-                  <i class="nav-icon fas fa-comments"></i> 
+                <a href="/adminRuntext" class="nav-link">
+                  <i class="nav-icon fas fa-comments"></i>
                   <p>Running Text</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="./pages/tables/linked.html" class="nav-link">
-                  <i class="nav-icon fas fa-globe"></i> 
+                  <i class="nav-icon fas fa-globe"></i>
                   <p>Linked Website</p>
                 </a>
               </li>
@@ -122,28 +122,28 @@
               <li class="nav-header">DATA</li>
               <li class="nav-item">
                 <a href="./pages/tables/peraturan.html" class="nav-link">
-                  <i class="nav-icon fas fa-balance-scale"></i> 
+                  <i class="nav-icon fas fa-balance-scale"></i>
                   <p>Manajemen Peraturan</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="./index.html" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i> 
+                  <i class="nav-icon fas fa-file"></i>
                   <p>Manajemen File</p>
                 </a>
               </li>
 
               <li class="nav-item">
                 <a href="./index.html" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i> 
+                  <i class="nav-icon fas fa-users"></i>
                   <p>Statistik Pegawai</p>
                 </a>
-              </li>   
-              
+              </li>
+
               <li class="nav-item">
                 <a href="./pages/tables/user.html" class="nav-link">
-                  <i class="nav-icon fas fa-user"></i> 
+                  <i class="nav-icon fas fa-user"></i>
                   <p>Manajemen Admin</p>
                 </a>
               </li>

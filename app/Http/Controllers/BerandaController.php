@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\RunText;
 
 class BerandaController extends Controller
 {
@@ -14,10 +15,15 @@ class BerandaController extends Controller
         $pengumuman = Post::orderByDesc('id')->where('jenisBerita', 'Pengumuman')->get();
         $event = Post::orderByDesc('id')->where('jenisBerita', 'Event')->get();
         $infolain = Post::orderByDesc('id')->where('jenisBerita', 'Info Lain')->get();
-
+        $runText = Runtext::orderByDesc('id')->get();
 
         $data = ['title' => 'Beranda - Biro Kepegawaian dan Organisasi KLHK'];
-        return view('frontend.main', $data)->with('berita', $berita)->with('pengumuman', $pengumuman)->with('event', $event)->with('infolain', $infolain);
+        return view('frontend.main', $data)
+        ->with('berita', $berita)
+        ->with('pengumuman', $pengumuman)
+        ->with('event', $event)
+        ->with('infolain', $infolain)
+        ->with('runText', $runText);
     }
 
     public function struktur(){
