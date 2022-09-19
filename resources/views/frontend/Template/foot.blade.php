@@ -1,129 +1,47 @@
-{{-- <footer class="page-footer bg-navbarr" style="margin: 0 0 -50px 0; background-color :#005f73">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-sm-6 col-lg-3 py-3">
-                <img src="{{ asset('img/logoheadfoot.png') }}" style="width:150%;height: 10%;" alt="">
-                <h4 class="mt-4 hw-bold">Media Sosial</h4>
-                <ul class="footer-menu">
-                    <a href="https://www.instagram.com/ropegklhk/" target="_blank"><span
-                            class="mai-logo-instagram"></span> ropegklhk</a>
-                    <br>
-                    <a href="https://www.youtube.com/channel/UCEgDjVLWqb6rGhwYLW1qucw" target="_blank"><span
-                            class="mai-logo-youtube"></span> ROPEG KLHK</a>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-lg-4 py-1">
-
-                <h4>Kontak</h4>
-                <p class="footer-link mt-2">
-                <p>
-                    <span class="fa-solid fa-location-dot"></span>
-                    Gedung Manggala Wanabakti Blok I Lantai 9
-                </p>
-                <p style="padding-left: 13px"> Jalan Gatot Subroto Senayan 10270</p>
-                <p style="padding-left: 13px"> Jakarta Pusat </p>
-                <p style="padding-left: 13px"> DKI Jakarta</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.71846280149!2d106.7996885!3d-6.2069256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34703240e8129a7f!2sMinistry%20of%20Environment%20and%20Forestry%20of%20The%20Republic%20of%20Indonesia!5e0!3m2!1sen!2sid!4v1659005531392!5m2!1sen!2sid"
-                    width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="mt-3"></div>
-                <p><span class="mai-call"></span>&nbsp; 021 - 5730342</p>
-                <p><span class="fa-solid fa-fax"></span>&nbsp; 021 - 5701116</p>
-                <p><span class="mai-mail"></span>&nbsp; ropegklhk@gmail.com</p>
-            </div>
-        </div>
-
-        <hr>
-        <div class="text-center">
-            <p id="copyright">Hak cipta &copy; 2022 Biro Kepegawaian dan Organisasi All Rights Reserved.</p>
-            <p id="copyright">Dikelola Subbagian Data dan Informasi Kepegawaian, Biro Kepegawaian dan Organisasi </p>
-        </div>
-
-    </div>
-</footer> --}}
 <footer class="page-footer bg-navbarr" style="margin: 0 0 -50px 0; background-color :#005f73">
-    <div class="container pt-5">
-        <div class="row">
-
-            <div class="col-lg-4 col-md-6">
-                <h3 class="text-white">Sosial Media</h3>
-                <img src="{{ asset('img/logoheadfoot.png') }}" style="width:100%;height: 15%;" alt="">
-                <div class="mt-10"></div>
-                <br>
-                <a href="https://www.instagram.com/ropegklhk/" target="_blank" class="text-white">
-                    <i class="fa-brands fa-instagram"></i> ropegklhk
-                </a>
-                <br>
-                <a href="https://www.youtube.com/channel/UCEgDjVLWqb6rGhwYLW1qucw" class="text-white" target="_blank"><i
-                        class="fa-brands fa-youtube"></i> ROPEG KLHK</a>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <h3 class="text-white">Lokasi</h3>
-                <div class="media">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.71846280149!2d106.7996885!3d-6.2069256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34703240e8129a7f!2sMinistry%20of%20Environment%20and%20Forestry%20of%20The%20Republic%20of%20Indonesia!5e0!3m2!1sen!2sid!4v1659005531392!5m2!1sen!2sid"
-                        width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-
-            <div class="col-lg-4 text-white">
-                <h4>Kontak</h4>
-                <p class="footer-link mt-2">
-                <p>
-                    <span class="fa-solid fa-location-dot"></span>
-                    Gedung Manggala Wanabakti Blok I Lantai 9
-                </p>
-                <p style="padding-left: 13px"> Jalan Gatot Subroto Senayan 10270</p>
-                <p style="padding-left: 13px"> Jakarta Pusat </p>
-                <p style="padding-left: 13px"> DKI Jakarta</p>
-                <div class="mt-3"></div>
-                <p><span class="mai-call"></span>&nbsp; 021 - 5730342</p>
-                <p><span class="fa-solid fa-fax"></span>&nbsp; 021 - 5701116</p>
-                <p><span class="mai-mail"></span>&nbsp; ropegklhk@gmail.com</p>
-            </div>
-            <hr>
-            <div class="text-center">
-                <p id="copyright">Hak cipta &copy; 2022 Biro Kepegawaian dan Organisasi All Rights Reserved.</p>
-                <p id="copyright">Dikelola Subbagian Data dan Informasi Kepegawaian, Biro Kepegawaian dan Organisasi
-                </p>
-            </div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-sm-6 col-lg-3 py-3">
+            <img src="{{ asset('img/logoheadfoot.png') }}" style="width:150%;height: 10%;" alt="">
+          <h4 class="mt-4 hw-bold">Media Sosial</h4>
+          <ul class="footer-menu">
+            <a href="https://www.instagram.com/ropegklhk/" target="_blank"><span class="mai-logo-instagram"></span> ropegklhk</a>
+            <br>
+            <a href="https://www.youtube.com/channel/UCEgDjVLWqb6rGhwYLW1qucw" target="_blank"><span class="mai-logo-youtube"></span> ROPEG KLHK</a>
+          </ul>
         </div>
+        <div class="col-sm-6 col-lg-4 py-1">
+          
+          <h4>Kontak</h4>
+          <p class="footer-link mt-2"> 
+            <p> 
+              <span class="fa-solid fa-location-dot"></span> 
+              Gedung Manggala Wanabakti Blok I Lantai 9 </p>
+            <p style="padding-left: 13px"> Jalan Gatot Subroto Senayan 10270</p>
+            <p style="padding-left: 13px"> Jakarta Pusat </p>
+            <p style="padding-left: 13px"> DKI Jakarta</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.71846280149!2d106.7996885!3d-6.2069256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x34703240e8129a7f!2sMinistry%20of%20Environment%20and%20Forestry%20of%20The%20Republic%20of%20Indonesia!5e0!3m2!1sen!2sid!4v1659005531392!5m2!1sen!2sid" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <div class="mt-3"></div>
+           <p><span class="mai-call"></span>&nbsp; 021 - 5730342</p> 
+           <p><span class="fa-solid fa-fax"></span>&nbsp; 021 - 5701116</p> 
+           <p><span class="mai-mail"></span>&nbsp; ropegklhk@gmail.com</p>
+        </div>
+      </div>
+
+      <hr>
+      <div class="text-center">
+        <p id="copyright">Hak cipta &copy; 2022 Biro Kepegawaian dan Organisasi All Rights Reserved.</p>
+        <p id="copyright">Dikelola Subbagian Data dan Informasi Kepegawaian, Biro Kepegawaian dan Organisasi </p>
+      </div>
+
     </div>
-</footer>
-<style>
+  </footer>
+
+  <style>
     .page-footer {
-
-        padding-top: 25px;
-        padding-bottom: 16px;
-
-    }
-</style>
-<script type="text/javascript">
-    var siteUrl = "{{ url('/') }}";
-    $(document).ready(function() {
-        $("#title").autocomplete({
-
-            source: function(request, response) {
-                $.ajax({
-                    // console.log();
-                    // url: siteUrl + '/' + "autocomplete",
-                    // data: {
-                    //     term: request.term
-                    // },
-                    // dataType: "json",
-                    // success: function(data) {
-                    //     var resp = $.map(data, function(obj) {
-                    //         return obj.name;
-                    //     });
-
-                    //     response(resp);
-                    // }
-                });
-            },
-            minLength: 2
-        });
-    });
-</script>
+   
+    padding-top: 25px;
+    padding-bottom: 16px;
+    
+}
+  </style>
