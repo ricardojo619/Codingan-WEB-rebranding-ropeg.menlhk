@@ -51,6 +51,28 @@ Route::get('/baca/{isi_slug}', [App\Http\Controllers\BlogController::class, 'isi
 Route::get('/foto/{isi_foto}', [App\Http\Controllers\BlogController::class, 'isi_foto']);
 Route::get('/profil-ropeg-klhk/{isi_profil}', [App\Http\Controllers\BlogController::class, 'isi_profil']);
 Route::get('/struktur-organisasi/{isi_struktur}', [App\Http\Controllers\BlogController::class, 'isi_struktur']);
+
+
+
+Route::resource('/jumlahasn', App\Http\Controllers\Admin\JumlahasnController::class, ['except' => ['show'], 'as' => 'admin']);
+Route::resource('/header', App\Http\Controllers\Admin\HeaderController::class, ['except' => ['show'], 'as' => 'admin']);
+Route::resource('/footer', App\Http\Controllers\Admin\FooterController::class, ['except' => ['show'], 'as' => 'admin']);
+Route::resource('/galeri', App\Http\Controllers\Admin\GaleriController::class, ['except' => ['show'], 'as' => 'admin']);
+Route::resource('/photo', App\Http\Controllers\Admin\PhotoController::class, ['except' => ['show'], 'as' => 'admin']);
+Route::resource('/struktur', App\Http\Controllers\Admin\StrukturController::class, ['except' => ['show'], 'as' => 'admin']);
+Route::resource('/running', App\Http\Controllers\Admin\RunningController::class, ['except' => ['show'], 'as' => 'admin']);
+Route::resource('/slider', App\Http\Controllers\Admin\SliderController::class, ['except' => ['show'], 'as' => 'admin']);
+Route::resource('/profil', App\Http\Controllers\Admin\ProfilController::class, ['except' => ['show'], 'as' => 'admin']);
+
+// Category
+Route::get('/category', [App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('admin.category.index');
+Route::get('/category/create', [App\Http\Controllers\Admin\CategoryController::class, 'create'])->name('admin.category.create');
+Route::get('/category/edit/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'edit'])->name('admin.category.edit');
+Route::post('/category/tambahpost', [App\Http\Controllers\Admin\CategoryController::class, 'store'])->name('admin.category.store');
+Route::post('/category/update/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'update'])->name('admin.category.update');
+Route::delete('/category/delete/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'destroy'])->name('admin.category.destroy');
+
+Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard.index');
 // Route::get('/', [BerandaController::class, 'beranda']);
 // Route::get('/beranda', [BerandaController::class, 'beranda']);
 
