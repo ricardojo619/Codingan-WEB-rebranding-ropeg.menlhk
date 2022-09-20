@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('thumbnail');
             $table->string('date');
             $table->string('jenisBerita');
-            $table->string('isiBerita');
+            $table->longtext('isiBerita');
             $table->bigInteger('views')->nullable();
             $table->timestamps();
         });

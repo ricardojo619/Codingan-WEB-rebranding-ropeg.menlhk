@@ -7,6 +7,7 @@ use App\Models\Photo;
 use App\Models\Galeri;
 use App\Models\Profil;
 use App\Models\Slider;
+use App\Models\Artikel;
 use App\Models\Running;
 use App\Models\Category;
 use App\Models\Struktur;
@@ -18,26 +19,26 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $listberita = Post::select("*")
+        $listberita = Artikel::select("*")
             ->where("is_active", 1)
             ->orderByDesc("created_at")
             ->take(3)->get();
-        $listpengumuman = Post::select("*")
+        $listpengumuman = Artikel::select("*")
             ->where("category_id", 1)
             ->where("is_active", 1)
             ->latest()
             ->take(3)->get();
-        $listevent = Post::select("*")
+        $listevent = Artikel::select("*")
             ->where("category_id", 2)
             ->where("is_active", 1)
             ->latest()
             ->take(3)->get();
-        $listinfolain = Post::select("*")
+        $listinfolain = Artikel::select("*")
             ->where("category_id", 3)
             ->where("is_active", 1)
             ->latest()
             ->take(3)->get();
-        $listslider = Post::select("*")
+        $listslider = Artikel::select("*")
             ->where("category_id", 3)
             ->where("is_active", 1)
             ->latest()
@@ -52,12 +53,12 @@ class BlogController extends Controller
     }
     public function isi_slug($isi_slug)
     {
-        Post::where("slug", $isi_slug)->increment('views');
+        Artikel::where("slug", $isi_slug)->increment('views');
         $categories = Category::latest()->get();
-        $posts = Post::where("slug", $isi_slug)->where("is_active", 1)->get();
-        $listpengumuman = Post::select("*")->where("category_id", 1)->where("is_active", 1)->latest()->take(3)->get();
-        $listevent = Post::select("*")->where("category_id", 2)->where("is_active", 1)->latest()->take(3)->get();
-        $listinfolain = Post::select("*")->where("category_id", 3)->where("is_active", 1)->latest()->take(3)->get();
+        $posts = Artikel::where("slug", $isi_slug)->where("is_active", 1)->get();
+        $listpengumuman = Artikel::select("*")->where("category_id", 1)->where("is_active", 1)->latest()->take(3)->get();
+        $listevent = Artikel::select("*")->where("category_id", 2)->where("is_active", 1)->latest()->take(3)->get();
+        $listinfolain = Artikel::select("*")->where("category_id", 3)->where("is_active", 1)->latest()->take(3)->get();
         return view('frontend.main.berita.index', compact('posts', 'categories', 'listpengumuman', 'listevent', 'listinfolain'));
     }
     public function isi_struktur($isi_struktur)
@@ -83,7 +84,7 @@ class BlogController extends Controller
     public function list_berita()
     {
         // Profil::where("id", $isi_profil)->increment('views');
-        $posts = Post::latest()->paginate(3);
+        $posts = Artikel::latest()->paginate(3);
         return view('frontend.main.berita.listberita', compact('posts'));
     }
 }

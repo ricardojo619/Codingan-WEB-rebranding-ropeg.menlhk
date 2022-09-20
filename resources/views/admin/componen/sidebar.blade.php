@@ -35,7 +35,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="/admin/post/" class="nav-link">
+                    <a href="/admin/artikel/" class="nav-link">
                         <i class="nav-icon fas fa-newspaper"></i>
                         <p>Berita</p>
                     </a>
