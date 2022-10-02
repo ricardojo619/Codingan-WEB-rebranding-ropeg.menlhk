@@ -41,11 +41,13 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body" style="padding: 5px;">
+                                    <a href="/baca/{{ $baca->slug }}" target="_blank" style=" color: #000;">
                                     <p class="p_font font_poppins_berita"
                                         style="width: 100%;height: 45px;overflow: hidden;text-overflow: ellipsis;">
                                         {{ $baca->title }}</p>
                                     <p class="card-text mx-2"><small
                                             class="text-muted">{{ str_replace('-', ' ', $baca->created_at) }}</small></p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -64,11 +66,13 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body" style="padding: 5px;">
+                                    <a href="/baca/{{ $baca->slug }}" target="_blank"  style=" color: #000;">
                                     <p class="p_font font_poppins_berita"
                                         style="width: 100%;height: 45px;overflow: hidden;text-overflow: ellipsis;">
                                         {{ $baca->title }}</p>
                                     <p class="card-text mx-2"><small
                                             class="text-muted">{{ str_replace('-', ' ', $baca->created_at) }}</small></p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -87,11 +91,13 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body" style="padding: 5px;">
+                                    <a href="/baca/{{ $baca->slug }}" target="_blank"  style=" color: #000;">
                                     <p class="p_font font_poppins_berita"
                                         style="width: 100%;height: 45px;overflow: hidden;text-overflow: ellipsis;">
                                         {{ $baca->title }}</p>
                                     <p class="card-text mx-2"><small
                                             class="text-muted">{{ str_replace('-', ' ', $baca->created_at) }}</small></p>
+                                    </a>
                                 </div>
                             </div>
                         </div>

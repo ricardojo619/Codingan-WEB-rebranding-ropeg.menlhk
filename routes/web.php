@@ -15,6 +15,7 @@ use App\Http\Controllers\BerandaController;
 |
 
 ----------------------------------------------------------------
+Untuk menjalan aplikasi pertama kalinya jalankan Xampp MySql & Apache
 php artisan storage:link
 composer dump-autoload
 php artisan migrate --seed
@@ -64,8 +65,8 @@ php artisan make:controller Api/PostController
 php artisan make:controller Api/SliderController
 php artisan make:controller Api/VideoController
 ----------------------------------------------------------------
-php artisan make:seeder Jumlahppnpn
-php artisan make:seeder Jumlahasn
+php artisan make:seeder JumlahppnpnSeeder
+php artisan make:seeder JumlahasnSeeder
 php artisan db:seed --class=JumlahppnpnSeeder
 php artisan db:seed --class=JumlahasnSeeder
 ----------------------------------------------------------------

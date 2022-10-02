@@ -2,7 +2,7 @@
 
 @section('halamandinamis')
     {{-- carousel --}}
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true" style="margin-top: 90px">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true" style="margin-top: 83px">
         <div class="carousel-indicators">
             @foreach ($slider as $row)
                 <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="{{ $loop->index }}"
@@ -240,8 +240,8 @@
                         @endforeach
 
                     </div>
-                    <div class="text-center top-50" style="padding-top: 50%;">
-                        <a href="/Btnlihse" class="btn btn-light mb-4 mt-2 justify-content-center"
+                    <div class="text-center top-50" style="padding-top: 70%;">
+                        <a href="/list-berita" class="btn btn-light mb-4 mt-2 justify-content-center"
                             style="border-radius: 30px">
                             <span style="color: rgba(2, 83, 107, 0.811);">LIHAT SEMUA</span>
                         </a>
@@ -438,15 +438,15 @@
 
             <div class="col-md-4">
                 <div class="">
-                    <h5 style="margin-left: 160px;">
-                        <div class="title-linekita fw-bold">Struktur Organisasi</div>
+                    {{-- <h5 style="margin-left: 148px;"> --}} 
+                        <div class="title-linekita fw-bold"style="margin-left: 148px;">Struktur Organisasi</div>
                         @foreach ($liststruktur as $row)
                             <a class="btn bg-darkku text-white mt-3 text-uppercase round text-center"
-                                style="margin-left: -17.5px;" href="/struktur-organisasi/{{ $row->id }}/">
+                                style="margin-left: 133px;" href="/struktur-organisasi/{{ $row->id }}/">
                                 Struktur Organisasi
                             </a>
                         @endforeach
-                    </h5>
+                    {{-- </h5> --}}
 
                 </div>
             </div>

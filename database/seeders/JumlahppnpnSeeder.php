@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Jumlahppnpn extends Seeder
+class JumlahppnpnSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,15 +14,15 @@ class Jumlahppnpn extends Seeder
      */
     public function run()
     {
-        \App\Models\Jumlahppnpn::insert([
-            ['eselon' => 'SEKJEN', 'jumlah' => '345',],
-            ['eselon' => 'ITJEN', 'jumlah' => '127',],
-            ['eselon' => 'PKTL', 'jumlah' => '1115',],
-            ['eselon' => 'KSDAE', 'jumlah' => '5196',],
-            ['eselon' => 'PDASRH', 'jumlah' => '924',],
+        \App\Models\Jumlahppnpns::insert([
+            ['eselon' => 'SEKJEN', 'jumlah' => '845',],
+            ['eselon' => 'ITJEN', 'jumlah' => '197',],
+            ['eselon' => 'PKTL', 'jumlah' => '1315',],
+            ['eselon' => 'KSDAE', 'jumlah' => '6196',],
+            ['eselon' => 'PDASRH', 'jumlah' => '1524',],
             ['eselon' => 'PHL', 'jumlah' => '816',],
             ['eselon' => 'PPKL', 'jumlah' => '273',],
-            ['eselon' => 'PSLB3', 'jumlah' => '165',],
+            ['eselon' => 'PSLB3', 'jumlah' => '265',],
             ['eselon' => 'PPI', 'jumlah' => '476',],
             ['eselon' => 'PSKL', 'jumlah' => '337',],
             ['eselon' => 'GAKKUM', 'jumlah' => '1178',],

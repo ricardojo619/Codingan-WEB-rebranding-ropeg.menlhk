@@ -34,6 +34,10 @@
                                 {{ str_replace('-', ' ', $row->created_at) }}
                             </div>
                             <div class="position-relative" style="margin: 40px 10px 25px 0;">
+                                <div class="bg-white position-absolute bottom-0 start-10 ">
+                                        Kategori
+                                    
+                                </div>
                                 <div class="bg-white position-absolute bottom-0 end-0">
                                     <button type="button" class="btn btn-primary btn-xs text-uppercase"
                                         style="padding: 2px 5px;
