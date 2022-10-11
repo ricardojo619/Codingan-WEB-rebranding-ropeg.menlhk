@@ -33,7 +33,7 @@
                             <div class="info-box-content">
                                 <span class="info-box-text">Total Berita</span>
                                 <span class="info-box-number">
-                                    {{ App\Models\Post::count() ?? '0' }}
+                                    {{ App\Models\Artikel::count() ?? '0' }}
                                 </span>
                             </div>
                             <!-- /.info-box-content -->

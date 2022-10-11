@@ -959,8 +959,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-top: none;
   }
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 3px;
+    padding-left: 9px;
   }
   .navbar-expand-md .navbar-nav {
     align-items: center;

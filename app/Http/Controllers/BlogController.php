@@ -49,16 +49,23 @@ class BlogController extends Controller
         $listgaleri     = Galeri::select("*")->where("is_active", 1)->latest()->get();
         $response       = Http::get('http://ropeg.menlhk.go.id/vendor/App/json_simpeg_eselon.php');
         $dataapi        = $response->json();
-        return view('frontend.main', compact('dataapi', 'listgaleri', 'liststruktur', 'slider', 'running', 'listberita', 'listinfolain', 'listevent', 'listpengumuman', 'listslider'));
+        $data = ['title' => 'ROPEG KLHK - Biro Kepegawaian dan Organisasi KLHK'];
+        return view('frontend.main', compact('dataapi', 'listgaleri', 'liststruktur', 'slider', 'running', 'listberita', 'listinfolain', 'listevent', 'listpengumuman', 'listslider' ),$data);
     }
     public function isi_slug($isi_slug)
     {
         Artikel::where("slug", $isi_slug)->increment('views');
         $categories = Category::latest()->get();
-        $posts = Artikel::where("slug", $isi_slug)->where("is_active", 1)->get();
+        $posts = Artikel::where("slug", $isi_slug)->where("is_active", 1);
         $listpengumuman = Artikel::select("*")->where("category_id", 1)->where("is_active", 1)->latest()->take(3)->get();
         $listevent = Artikel::select("*")->where("category_id", 2)->where("is_active", 1)->latest()->take(3)->get();
         $listinfolain = Artikel::select("*")->where("category_id", 3)->where("is_active", 1)->latest()->take(3)->get();
+        // $bebas = $posts->title;
+        // dd($bebas);
+         $data = [
+        'title' => $posts->judul,
+        'posts'=> $post];
+        // dd($data);
         return view('frontend.main.berita.index', compact('posts', 'categories', 'listpengumuman', 'listevent', 'listinfolain'));
     }
     public function isi_struktur($isi_struktur)

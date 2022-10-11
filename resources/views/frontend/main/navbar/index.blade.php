@@ -336,7 +336,7 @@
                                     @csrf
 
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Search Product By Name</label>
+                                        <label for="exampleInputEmail1">Masukkan Kata Kunci</label>
                                         <input type="text" id="name" name="name" class="form-control">
                                     </div>
 
