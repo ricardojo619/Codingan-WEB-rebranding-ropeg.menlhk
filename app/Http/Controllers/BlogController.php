@@ -49,9 +49,11 @@ class BlogController extends Controller
         $listgaleri     = Galeri::select("*")->where("is_active", 1)->latest()->get();
         $response       = Http::get('http://ropeg.menlhk.go.id/vendor/App/json_simpeg_eselon.php');
         $dataapi        = $response->json();
-        $data = ['title' => 'ROPEG KLHK - Biro Kepegawaian dan Organisasi KLHK'];
-        return view('frontend.main', compact('dataapi', 'listgaleri', 'liststruktur', 'slider', 'running', 'listberita', 'listinfolain', 'listevent', 'listpengumuman', 'listslider' ),$data);
+        $title = ['title' => 'ROPEG KLHK - Biro Kepegawaian dan Organisasi KLHK'];
+        
+        return view('frontend.main', compact('listgaleri', 'liststruktur', 'slider', 'running', 'listberita', 'listinfolain', 'listevent', 'listpengumuman', 'listslider'), $title);
     }
+
     public function isi_slug($isi_slug)
     {
         Artikel::where("slug", $isi_slug)->increment('views');
@@ -60,38 +62,56 @@ class BlogController extends Controller
         $listpengumuman = Artikel::select("*")->where("category_id", 1)->where("is_active", 1)->latest()->take(3)->get();
         $listevent = Artikel::select("*")->where("category_id", 2)->where("is_active", 1)->latest()->take(3)->get();
         $listinfolain = Artikel::select("*")->where("category_id", 3)->where("is_active", 1)->latest()->take(3)->get();
-        // $bebas = $posts->title;
-        // dd($bebas);
-         $data = [
-        'title' => $posts->judul,
-        'posts'=> $post];
-        // dd($data);
-        return view('frontend.main.berita.index', compact('posts', 'categories', 'listpengumuman', 'listevent', 'listinfolain'));
+        
+        $titlex = Artikel::where("slug", $isi_slug)->where("is_active", 1)->first();
+        $title = [
+            'title'  => $titlex->title,
+        ];
+        return view('frontend.main.berita.index', compact('posts', 'categories', 'listpengumuman', 'listevent', 'listinfolain'), $title);
     }
     public function isi_struktur($isi_struktur)
     {
         Struktur::where("id", $isi_struktur)->increment('views');
         $posts = Struktur::where("id", $isi_struktur)->where("is_active", 1)->latest()->take(1)->get();
-        return view('frontend.main.struktur.index', compact('posts'));
+        
+        $titlex = Struktur::where("id", $isi_struktur)->where("is_active", 1)->first();
+        $title = [
+            'title'  => $titlex->title,
+        ];
+        return view('frontend.main.struktur.index', compact('posts'), $title);
     }
     public function isi_profil($isi_profil)
     {
         Profil::where("id", $isi_profil)->increment('views');
         $posts = Profil::where("id", $isi_profil)->where("is_active", 1)->latest()->take(1)->get();
-        return view('frontend.main.profil.index', compact('posts'));
+        
+        $titlex = Profil::where("id", $isi_profil)->where("is_active", 1)->first();
+        $title = [
+            'title'  => $titlex->title,
+        ];
+        return view('frontend.main.profil.index', compact('posts'), $title);
     }
     public function isi_foto($isi_foto)
     {
         Galeri::where("id", $isi_foto)->increment('views');
         $galeri = Galeri::select("*")->where("id", $isi_foto)->latest()->get();
         $posts  = Photo::where("galeri_id", $isi_foto)->where("is_active", 1)->orderByDesc("created_at")->get();
-        return view('frontend.main.foto.index', compact('posts', 'galeri'));
+        
+        $titlex = Photo::where("galeri_id", $isi_foto)->where("is_active", 1)->first();
+        $title = [
+            'title'  => $titlex->title,
+        ];
+
+        return view('frontend.main.foto.index', compact('posts', 'galeri'), $title);
     }
 
     public function list_berita()
     {
         // Profil::where("id", $isi_profil)->increment('views');
         $posts = Artikel::latest()->paginate(3);
-        return view('frontend.main.berita.listberita', compact('posts'));
+        $title = [
+            'title'  => 'Kumpulan Berita',
+        ];
+        return view('frontend.main.berita.listberita', compact('posts'), $title);
     }
 }
